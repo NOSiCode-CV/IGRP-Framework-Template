@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listapage/ListaPage.xsl" type="text/xsl"?>
+<rows>
+    <link_img>images/IGRP/IGRP2.3</link_img>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2017 - Copyright NOSI</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>ListaPage</page>
+    <app>igrp_studio</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.igrp_studio.pages</package_db>
+        <package_html>ListaPage</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=1</preserve_url>
+    </plsql>
+    <content>
+        <title>Page builder</title>
+        <infopanel_1 type="infopanel" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <infopanel_1_title name="p_infopanel_1_title" type="text" maxlength="4000" persist="true">
+                    <label>Title</label>
+                    <value>Report designer</value>
+                </infopanel_1_title>
+                <infopanel_1_val name="p_infopanel_1_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value></value>
+                </infopanel_1_val>
+                <infopanel_1_url name="p_infopanel_1_url" type="text" maxlength="4000" persist="true">
+                    <label>URL</label>
+                    <value>webapps?r=igrp_studio/WebReport/index</value>
+                </infopanel_1_url>
+                <infopanel_1_bg name="p_infopanel_1_bg" type="text" maxlength="4000" persist="true">
+                    <label>Background</label>
+                    <value>cp-black</value>
+                </infopanel_1_bg>
+                <infopanel_1_icn name="p_infopanel_1_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-file-text</value>
+                </infopanel_1_icn>
+            </fields>
+        </infopanel_1>
+        <infopanel_2 type="infopanel" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <infopanel_2_title name="p_infopanel_2_title" type="text" maxlength="4000" persist="true">
+                    <label>Title</label>
+                    <value>BPMN designer</value>
+                </infopanel_2_title>
+                <infopanel_2_val name="p_infopanel_2_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value></value>
+                </infopanel_2_val>
+                <infopanel_2_url name="p_infopanel_2_url" type="text" maxlength="4000" persist="true">
+                    <label>URL</label>
+                    <value>webapps?r=igrp_studio/BPMNDesigner/index</value>
+                </infopanel_2_url>
+                <infopanel_2_bg name="p_infopanel_2_bg" type="text" maxlength="4000" persist="true">
+                    <label>Background</label>
+                    <value>cp-lavendar</value>
+                </infopanel_2_bg>
+                <infopanel_2_icn name="p_infopanel_2_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-sitemap</value>
+                </infopanel_2_icn>
+            </fields>
+        </infopanel_2>
+        <infopanel_3 type="infopanel" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <infopanel_3_title name="p_infopanel_3_title" type="text" maxlength="4000" persist="true">
+                    <label>Title</label>
+                    <value>Application builder</value>
+                </infopanel_3_title>
+                <infopanel_3_val name="p_infopanel_3_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value></value>
+                </infopanel_3_val>
+                <infopanel_3_url name="p_infopanel_3_url" type="text" maxlength="4000" persist="true">
+                    <label>URL</label>
+                    <value>webapps?r=igrp_studio/ListaEnv/index</value>
+                </infopanel_3_url>
+                <infopanel_3_bg name="p_infopanel_3_bg" type="text" maxlength="4000" persist="true">
+                    <label>Background</label>
+                    <value>cp-starrynight</value>
+                </infopanel_3_bg>
+                <infopanel_3_icn name="p_infopanel_3_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-folder-open</value>
+                </infopanel_3_icn>
+            </fields>
+        </infopanel_3>
+        <box_2 type="box" xml-type="form" gen-type="container" gen-group="">
+            <fields/>
+        </box_2>
+        <form_1 type="form" xml-type="form" title="Page builder" gen-type="container" gen-group="">
+            <fields>
+                <env_fk name="p_env_fk" type="select" multiple="false" maxlength="30" required="false" change="true" disabled="false" right="false" domain="" java-type="">
+                    <label>Aplicação</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules/>
+                </env_fk>
+                <link_btn_nova_pagina name="p_link_btn_nova_pagina" type="link" target="modal" target_fields="" closerefresh="true" action="index" page="ListaEnv" app="igrp_studio" class="success" btnSize="" iconColor="#333" iconClass="" img="fa-plus-square" maxlength="30" placeholder="" right="true">
+                    <label>Nova página</label>
+                    <value>undefined/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xsl</value>
+                </link_btn_nova_pagina>
+                <crud_generator name="p_crud_generator" type="link" target="modal" target_fields="" closerefresh="true" action="index" page="HomeStudio" app="igrp_studio" class="warning" btnSize="" iconColor="#333" iconClass="" img="fa-gears" maxlength="30" placeholder="" right="true">
+                    <label>CRUD generator</label>
+                    <value>undefined/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/homestudio/HomeStudio.xsl</value>
+                </crud_generator>
+                <btn_import name="p_btn_import" type="link" target="modal" target_fields="" closerefresh="true" action="undefined" page="undefined" app="undefined" class="danger" btnSize="" iconColor="#333" iconClass="" img="fa-upload" maxlength="30" placeholder="" right="true">
+                    <label>Importar</label>
+                    <value>http://tu.co.uk/wif</value>
+                </btn_import>
+            </fields>
+        </form_1>
+        <box_1 type="box" xml-type="form" gen-type="container" gen-group="">
+            <fields/>
+        </box_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <status_page name="p_status_page" type="checkbox" maxlength="30" align="left" lookup_parser="false" iskey="false" switch="true" check="true" desc="true">
+                    <label>Estado</label>
+                </status_page>
+                <descricao_page name="p_descricao_page" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Título</label>
+                </descricao_page>
+                <nome_page name="p_nome_page" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Código</label>
+                </nome_page>
+                <id_page name="p_id_page" type="hidden" maxlength="30" iskey="false" tag="id_page"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <status_page name="p_status_page" check="true" desc="true">1</status_page>
+                        <status_page_desc name="p_status_page_desc">1</status_page_desc>
+                        <descricao_page name="p_descricao_page">Lorem iste deserunt totam sed</descricao_page>
+                        <nome_page name="p_nome_page">Accusantium amet iste consecte</nome_page>
+                        <id_page name="p_id_page" tag="id_page">1</id_page>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <status_page name="p_status_page" check="true" desc="true">1</status_page>
+                        <status_page_desc name="p_status_page_desc">1</status_page_desc>
+                        <descricao_page name="p_descricao_page">Aliqua totam unde dolor rem</descricao_page>
+                        <nome_page name="p_nome_page">Adipiscing magna mollit ipsum</nome_page>
+                        <id_page name="p_id_page" tag="id_page">1</id_page>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <status_page name="p_status_page" check="true" desc="true">1</status_page>
+                        <status_page_desc name="p_status_page_desc">1</status_page_desc>
+                        <descricao_page name="p_descricao_page">Laudantium lorem deserunt lore</descricao_page>
+                        <nome_page name="p_nome_page">Ipsum anim sed sit doloremque</nome_page>
+                        <id_page name="p_id_page" tag="id_page">1</id_page>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <status_page name="p_status_page" check="true" desc="true">1</status_page>
+                        <status_page_desc name="p_status_page_desc">1</status_page_desc>
+                        <descricao_page name="p_descricao_page">Sed totam voluptatem adipiscin</descricao_page>
+                        <nome_page name="p_nome_page">Voluptatem adipiscing natus la</nome_page>
+                        <id_page name="p_id_page" tag="id_page">1</id_page>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <status_page name="p_status_page" check="true" desc="true">1</status_page>
+                        <status_page_desc name="p_status_page_desc">1</status_page_desc>
+                        <descricao_page name="p_descricao_page">Sit aliqua sit ut ipsum</descricao_page>
+                        <nome_page name="p_nome_page">Ipsum aperiam perspiciatis ape</nome_page>
+                        <id_page name="p_id_page" tag="id_page">1</id_page>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="warning" rel="editar">
+                        <title>Editar</title>
+                        <app/>
+                        <page/>
+                        <link/>
+                        <parameter>undefined?</parameter>
+                        <target>modal|refresh</target>
+                        <img>warning|fa-pencil</img>
+                    </item>
+                    <item type="specific" code="" class="primary" rel="visualizar">
+                        <title>Visualizar</title>
+                        <app>igrp_studio</app>
+                        <page>ListaPage</page>
+                        <link>index</link>
+                        <parameter>undefined/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listapage/ListaPage.xsl?</parameter>
+                        <target>_blank</target>
+                        <img>primary|fa-eye</img>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar">
+                        <title>Eliminar</title>
+                        <app>igrp_studio</app>
+                        <page>ListaPage</page>
+                        <link>index</link>
+                        <parameter>undefined/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listapage/ListaPage.xsl?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                    </item>
+                    <item type="specific" code="" class="info" rel="gerar_codigo">
+                        <title>Gerar Código</title>
+                        <app/>
+                        <page/>
+                        <link/>
+                        <parameter>undefined?</parameter>
+                        <target>_blank</target>
+                        <img>info|fa-gears</img>
+                    </item>
+                    <item type="specific" code="" class="grey" rel="download">
+                        <title>Download</title>
+                        <app/>
+                        <page/>
+                        <link/>
+                        <parameter>undefined?</parameter>
+                        <target>confirm</target>
+                        <img>grey|fa-download</img>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+        <myapps_list type="table" xml-type="table" title="Minhas Aplicações" gen-type="container" gen-group="true">
+            <fields>
+                <icon name="p_icon" type="img" persist="true" img="images/IGRP/IGRP2.3/assets/img/jon_doe.jpg" width="" height="" croppie="false" rounded="false" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Icon</label>
+                </icon>
+                <aplicacao name="p_aplicacao" type="link" target="_self" target_fields="" closerefresh="false" action="index" page="ListaPage" app="igrp_studio" class="link" btnSize="" iconColor="#333" iconClass="" img="fa-link" maxlength="30" align="left" lookup_parser="false" iskey="false" desc="true">
+                    <label>Aplicação</label>
+                </aplicacao>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <icon name="p_icon">images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</icon>
+                        <aplicacao name="p_aplicacao" desc="true">undefined/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listapage/ListaPage.xsl</aplicacao>
+                        <aplicacao_desc name="p_aplicacao_desc">Aplicação</aplicacao_desc>
+                    </row>
+                    <row>
+                        <icon name="p_icon">images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</icon>
+                        <aplicacao name="p_aplicacao" desc="true">undefined/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listapage/ListaPage.xsl</aplicacao>
+                        <aplicacao_desc name="p_aplicacao_desc">Aplicação</aplicacao_desc>
+                    </row>
+                    <row>
+                        <icon name="p_icon">images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</icon>
+                        <aplicacao name="p_aplicacao" desc="true">undefined/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listapage/ListaPage.xsl</aplicacao>
+                        <aplicacao_desc name="p_aplicacao_desc">Aplicação</aplicacao_desc>
+                    </row>
+                    <row>
+                        <icon name="p_icon">images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</icon>
+                        <aplicacao name="p_aplicacao" desc="true">undefined/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listapage/ListaPage.xsl</aplicacao>
+                        <aplicacao_desc name="p_aplicacao_desc">Aplicação</aplicacao_desc>
+                    </row>
+                    <row>
+                        <icon name="p_icon">images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</icon>
+                        <aplicacao name="p_aplicacao" desc="true">undefined/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listapage/ListaPage.xsl</aplicacao>
+                        <aplicacao_desc name="p_aplicacao_desc">Aplicação</aplicacao_desc>
+                    </row>
+                </value>
+            </table>
+        </myapps_list>
+        <toolsbar_2 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="nova_aplicacao">
+                <title>Nova Aplicação</title>
+                <app>igrp_studio</app>
+                <page>Env</page>
+                <link>index</link>
+                <target>modal|refresh</target>
+                <img>primary|fa-plus</img>
+                <parameter>undefined/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/env/Env.xsl</parameter>
+            </item>
+        </toolsbar_2>
+    </content>
+</rows>

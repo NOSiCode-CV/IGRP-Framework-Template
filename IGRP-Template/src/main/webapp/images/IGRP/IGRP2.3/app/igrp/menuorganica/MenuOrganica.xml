@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/menuorganica/MenuOrganica.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2017 - Copyright NOSI</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>MenuOrganica</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>MenuOrganica</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=18</preserve_url>
+    </plsql>
+    <content>
+        <title>Associar Menu a Organica</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar">
+                <title>Gravar</title>
+                <app>igrp</app>
+                <page>MenuOrganica</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>primary|fa-save</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/menuorganica/MenuOrganica.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" title="Menu" gen-type="container" gen-group="true">
+            <fields>
+                <menu name="p_menu" type="checkbox" maxlength="30" align="left" lookup_parser="false" iskey="false" switch="false" check="true" desc="true">
+                    <label></label>
+                </menu>
+                <descricao name="p_descricao" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Nome</label>
+                </descricao>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <menu name="p_menu" check="true" desc="true">1</menu>
+                        <menu_desc name="p_menu_desc">1</menu_desc>
+                        <descricao name="p_descricao">Ipsum totam aliqua amet elit</descricao>
+                    </row>
+                    <row>
+                        <menu name="p_menu" check="true" desc="true">1</menu>
+                        <menu_desc name="p_menu_desc">1</menu_desc>
+                        <descricao name="p_descricao">Natus iste perspiciatis sit st</descricao>
+                    </row>
+                    <row>
+                        <menu name="p_menu" check="true" desc="true">1</menu>
+                        <menu_desc name="p_menu_desc">1</menu_desc>
+                        <descricao name="p_descricao">Elit mollit perspiciatis anim</descricao>
+                    </row>
+                    <row>
+                        <menu name="p_menu" check="true" desc="true">1</menu>
+                        <menu_desc name="p_menu_desc">1</menu_desc>
+                        <descricao name="p_descricao">Perspiciatis sed labore elit s</descricao>
+                    </row>
+                    <row>
+                        <menu name="p_menu" check="true" desc="true">1</menu>
+                        <menu_desc name="p_menu_desc">1</menu_desc>
+                        <descricao name="p_descricao">Sit iste doloremque ipsum pers</descricao>
+                    </row>
+                </value>
+            </table>
+        </table_1>
+        <toolsbar_2 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo">
+                <title>Novo</title>
+                <app>igrp</app>
+                <page>NovoMenu</page>
+                <link>index</link>
+                <target>modal|refresh</target>
+                <img>success|fa-plus-square-o</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/novomenu/NovoMenu.xml</preview>
+            </item>
+        </toolsbar_2>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <hidden name="p_id" type="hidden" maxlength="30" java-type="int" tag="id"/>
+                <hidden name="p_type" type="hidden" maxlength="30" java-type="" tag="type"/>
+            </fields>
+        </form_1>
+    </content>
+</rows>

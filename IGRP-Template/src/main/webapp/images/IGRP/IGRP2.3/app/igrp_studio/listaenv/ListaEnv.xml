@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2017 - Copyright NOSI</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>ListaEnv</page>
+    <app>igrp_studio</app>
+    <plsql>
+        <action>index</action>
+        <package_instance>null</package_instance>
+        <package_db>nosi.webapps.igrp_studio.pages</package_db>
+        <package_html>ListaEnv</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=3</preserve_url>
+    </plsql>
+    <content>
+        <title>Application builder</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>App builder</value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="importar">
+                <title>Importar</title>
+                <app>igrp_studio</app>
+                <page>ListaEnv</page>
+                <link>index</link>
+                <target>modal|refresh</target>
+                <img>default|fa-upload</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xml</preview>
+            </item>
+            <item type="specific" code="" rel="novo">
+                <title>Nova aplicação</title>
+                <app>igrp_studio</app>
+                <page>Env</page>
+                <link>index</link>
+                <target>modal|refresh</target>
+                <img>success|fa-plus</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/env/Env.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <status name="p_status" type="checkbox" maxlength="30" align="left" lookup_parser="false" iskey="false" switch="true" check="true" desc="true">
+                    <label>Ativo?</label>
+                </status>
+                <name name="p_name" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Nome</label>
+                </name>
+                <dad name="p_dad" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Código</label>
+                </dad>
+                <t_page_builder name="p_t_page_builder" type="link" target="_self" target_fields="" closerefresh="false" action="index" page="ListaEnv" app="igrp_studio" class="warning" btnSize="" iconColor="#333" iconClass="" img="fa-file-code-o" maxlength="30" align="left" lookup_parser="false" iskey="false" custom_action="" action_type="false" desc="true">
+                    <label>Page builder</label>
+                </t_page_builder>
+                <id name="p_id" type="hidden" maxlength="30" iskey="false" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <status name="p_status" check="true" desc="true">1</status>
+                        <status_desc name="p_status_desc">1</status_desc>
+                        <name name="p_name">Omnis unde sit dolor sed</name>
+                        <dad name="p_dad">Laudantium mollit accusantium</dad>
+                        <t_page_builder name="p_t_page_builder" desc="true">/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xml</t_page_builder>
+                        <t_page_builder_desc name="p_t_page_builder_desc">Page builder</t_page_builder_desc>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <status name="p_status" check="true" desc="true">1</status>
+                        <status_desc name="p_status_desc">1</status_desc>
+                        <name name="p_name">Aperiam adipiscing unde ipsum</name>
+                        <dad name="p_dad">Totam omnis doloremque natus r</dad>
+                        <t_page_builder name="p_t_page_builder" desc="true">/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xml</t_page_builder>
+                        <t_page_builder_desc name="p_t_page_builder_desc">Page builder</t_page_builder_desc>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <status name="p_status" check="true" desc="true">1</status>
+                        <status_desc name="p_status_desc">1</status_desc>
+                        <name name="p_name">Dolor adipiscing voluptatem an</name>
+                        <dad name="p_dad">Totam unde deserunt anim aliqu</dad>
+                        <t_page_builder name="p_t_page_builder" desc="true">/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xml</t_page_builder>
+                        <t_page_builder_desc name="p_t_page_builder_desc">Page builder</t_page_builder_desc>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <status name="p_status" check="true" desc="true">1</status>
+                        <status_desc name="p_status_desc">1</status_desc>
+                        <name name="p_name">Totam dolor doloremque omnis a</name>
+                        <dad name="p_dad">Totam anim adipiscing aperiam</dad>
+                        <t_page_builder name="p_t_page_builder" desc="true">/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xml</t_page_builder>
+                        <t_page_builder_desc name="p_t_page_builder_desc">Page builder</t_page_builder_desc>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <status name="p_status" check="true" desc="true">1</status>
+                        <status_desc name="p_status_desc">1</status_desc>
+                        <name name="p_name">Aperiam rem doloremque elit se</name>
+                        <dad name="p_dad">Aliqua perspiciatis lorem aper</dad>
+                        <t_page_builder name="p_t_page_builder" desc="true">/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xml</t_page_builder>
+                        <t_page_builder_desc name="p_t_page_builder_desc">Page builder</t_page_builder_desc>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="warning" rel="editar">
+                        <title>Editar</title>
+                        <app>igrp_studio</app>
+                        <page>ListaPage</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listapage/ListaPage.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-pencil</img>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar">
+                        <title>Eliminar</title>
+                        <app>igrp_studio</app>
+                        <page>ListaEnv</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash-o</img>
+                    </item>
+                    <item type="specific" code="" class="grey" rel="configurar_base_dados">
+                        <title>Configurar Base Dados</title>
+                        <app>igrp_studio</app>
+                        <page>ListaEnv</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xml?</parameter>
+                        <target>modal</target>
+                        <img>grey|fa-database</img>
+                    </item>
+                    <item type="specific" code="" class="default" rel="exportar">
+                        <title>Export</title>
+                        <app>igrp_studio</app>
+                        <page>ListaEnv</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp_studio/listaenv/ListaEnv.xml?</parameter>
+                        <target>confirm</target>
+                        <img>default|fa-download</img>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+</rows>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Igrp OAuth2 sso</comment>
+	<entry key="oauth2.client_id"></entry>
+	<entry key="oauth2.client_secret"></entry>
+	<entry key="oauth2.endpoint"></entry>
+</properties>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/registarutilizador/RegistarUtilizador.xsl" type="text/xsl"?>
+<rows>
+    <link_img>images/IGRP/IGRP2.3</link_img>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2017 - Copyright NOSI</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>RegistarUtilizador</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>RegistarUtilizador</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=15</preserve_url>
+    </plsql>
+    <content>
+        <title>Registar Utilizador</title>
+        <titulo type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <titulo_text type="text" name="p_titulo_text" persist="true" maxlength="4000">
+                    <value>Registar utilizador</value>
+                </titulo_text>
+            </fields>
+        </titulo>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="guardar">
+                <title>Guardar</title>
+                <app>igrp</app>
+                <page>Dominio</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>primary|fa-save</img>
+                <parameter>undefined/IGRP/images/IGRP/IGRP2.3/app/igrp/dominio/Dominio.xsl</parameter>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="100" required="true" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Nome</label>
+                    <value>Ipsum doloremque dolor accusantium sed</value>
+                </nome>
+                <username name="p_username" type="text" maxlength="50" required="true" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Username</label>
+                    <value>Consectetur magna sed unde elit</value>
+                </username>
+                <email name="p_email" type="text" maxlength="100" required="true" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Email</label>
+                    <value>Ipsum perspiciatis totam aliqua sit</value>
+                </email>
+                <nada name="p_nada" type="separator" maxlength="30" placeholder="" right="false">
+                    <label></label>
+                </nada>
+                <password name="p_password" type="password" maxlength="20" required="true" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Password</label>
+                    <value>******</value>
+                </password>
+                <confirmar_password name="p_confirmar_password" type="password" maxlength="20" required="true" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Confirmar password</label>
+                    <value>******</value>
+                </confirmar_password>
+            </fields>
+        </form_1>
+    </content>
+</rows>

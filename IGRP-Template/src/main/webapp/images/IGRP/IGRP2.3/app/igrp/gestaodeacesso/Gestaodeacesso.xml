@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/gestaodeacesso/Gestaodeacesso.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2017 - Copyright NOSI</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Gestaodeacesso</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance>null</package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>Gestaodeacesso</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=41</preserve_url>
+    </plsql>
+    <content>
+        <title>Gestao de Acesso</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>Gestão de Acesso</value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <aplicacao name="p_aplicacao" type="select" multiple="false" domain="" maxlength="30" required="false" change="true" disabled="false" right="false" java-type="">
+                    <label>Aplicação</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules/>
+                </aplicacao>
+                <adicionar_organica1 name="p_adicionar_organica1" type="link" target="modal" target_fields="" closerefresh="true" action="index" page="NovaOrganica" app="igrp" class="primary" btnSize="" iconColor="#333" iconClass="" img="fa-plus-square" maxlength="30" placeholder="" right="true" custom_action="" action_type="false">
+                    <label>Adicionar Organização</label>
+                    <value>/IGRP/images/IGRP/IGRP2.3/app/igrp/novaorganica/NovaOrganica.xml</value>
+                </adicionar_organica1>
+                <gestao_de_utilizadores1 name="p_gestao_de_utilizadores1" type="link" target="modal" target_fields="" closerefresh="false" action="index" page="PesquisarUtilizador" app="igrp" class="success" btnSize="" iconColor="#333" iconClass="" img="fa-users" maxlength="30" placeholder="" right="true" custom_action="" action_type="false">
+                    <label>Gestão de utilizadores</label>
+                    <value>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml</value>
+                </gestao_de_utilizadores1>
+                <gestao_de_menu name="p_gestao_de_menu" type="link" target="modal" target_fields="" closerefresh="false" action="index" page="PesquisarMenu" app="igrp" custom_action="" action_type="false" class="info" btnSize="" iconColor="#333" iconClass="" img="fa-bars" maxlength="30" placeholder="" right="true">
+                    <label>Gestão de menu</label>
+                    <value>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xml</value>
+                </gestao_de_menu>
+            </fields>
+        </form_1>
+        <org_table type="table" xml-type="table" title="Organizações" gen-type="container" gen-group="true">
+            <fields>
+                <estado name="p_estado" type="checkbox" maxlength="10" align="center" lookup_parser="true" iskey="true" switch="true" check="true" desc="true">
+                    <label>Estado</label>
+                </estado>
+                <org_nome name="p_org_nome" type="text" maxlength="30" align="center" lookup_parser="false" iskey="false">
+                    <label>Nome</label>
+                </org_nome>
+                <mostrar_perfis name="p_mostrar_perfis" type="link" target="modal" target_fields="" closerefresh="false" action="index" page="PesquisarMenu" app="igrp" class="primary" btnSize="btn-xs" iconColor="#333" iconClass="" img="fa-address-card" maxlength="30" align="right" lookup_parser="false" iskey="false" custom_action="" action_type="false" desc="true">
+                    <label>Mostrar perfis</label>
+                </mostrar_perfis>
+                <id name="p_id" type="hidden" maxlength="30" iskey="true" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <estado name="p_estado" check="true" desc="true">1</estado>
+                        <estado_desc name="p_estado_desc">1</estado_desc>
+                        <org_nome name="p_org_nome">Anim doloremque accusantium lo</org_nome>
+                        <mostrar_perfis name="p_mostrar_perfis" desc="true">/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xml</mostrar_perfis>
+                        <mostrar_perfis_desc name="p_mostrar_perfis_desc">Mostrar perfis</mostrar_perfis_desc>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <estado name="p_estado" check="true" desc="true">1</estado>
+                        <estado_desc name="p_estado_desc">1</estado_desc>
+                        <org_nome name="p_org_nome">Voluptatem stract perspiciatis</org_nome>
+                        <mostrar_perfis name="p_mostrar_perfis" desc="true">/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xml</mostrar_perfis>
+                        <mostrar_perfis_desc name="p_mostrar_perfis_desc">Mostrar perfis</mostrar_perfis_desc>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <estado name="p_estado" check="true" desc="true">1</estado>
+                        <estado_desc name="p_estado_desc">1</estado_desc>
+                        <org_nome name="p_org_nome">Aperiam sit stract perspiciati</org_nome>
+                        <mostrar_perfis name="p_mostrar_perfis" desc="true">/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xml</mostrar_perfis>
+                        <mostrar_perfis_desc name="p_mostrar_perfis_desc">Mostrar perfis</mostrar_perfis_desc>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <estado name="p_estado" check="true" desc="true">1</estado>
+                        <estado_desc name="p_estado_desc">1</estado_desc>
+                        <org_nome name="p_org_nome">Mollit adipiscing totam volupt</org_nome>
+                        <mostrar_perfis name="p_mostrar_perfis" desc="true">/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xml</mostrar_perfis>
+                        <mostrar_perfis_desc name="p_mostrar_perfis_desc">Mostrar perfis</mostrar_perfis_desc>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <estado name="p_estado" check="true" desc="true">1</estado>
+                        <estado_desc name="p_estado_desc">1</estado_desc>
+                        <org_nome name="p_org_nome">Officia stract consectetur ani</org_nome>
+                        <mostrar_perfis name="p_mostrar_perfis" desc="true">/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xml</mostrar_perfis>
+                        <mostrar_perfis_desc name="p_mostrar_perfis_desc">Mostrar perfis</mostrar_perfis_desc>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="warning" rel="editar">
+                        <title>Editar</title>
+                        <app/>
+                        <page/>
+                        <link/>
+                        <parameter>undefined?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-pencil</img>
+                    </item>
+                    <item type="specific" code="" class="info" rel="menu">
+                        <title>Menu</title>
+                        <app>igrp</app>
+                        <page>MenuOrganica</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/menuorganica/MenuOrganica.xml?</parameter>
+                        <target>right_panel|refresh</target>
+                        <img>info|fa-bars</img>
+                    </item>
+                    <item type="specific" code="" class="black" rel="transaction">
+                        <title>Transaction</title>
+                        <app>igrp</app>
+                        <page>TransacaoOrganica</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/transacaoorganica/TransacaoOrganica.xml?</parameter>
+                        <target>right_panel|refresh</target>
+                        <img>black|fa-exchange</img>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar">
+                        <title>Eliminar</title>
+                        <app/>
+                        <page/>
+                        <link/>
+                        <parameter>undefined?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                    </item>
+                </context-menu>
+            </table>
+        </org_table>
+    </content>
+</rows>

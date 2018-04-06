@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/settings/Settings.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2017 - Copyright NOSI</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Settings</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance>null</package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>Settings</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=14</preserve_url>
+    </plsql>
+    <content>
+        <title>Área pessoal</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>Área pessoal</value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <view_1 type="view" xml-type="view" gen-type="container" gen-group="">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="100">
+                    <label>Nome</label>
+                    <value>Natus ipsum perspiciatis sit adipiscing</value>
+                </nome>
+                <email name="p_email" type="text" maxlength="100">
+                    <label>Email</label>
+                    <value>Doloremque voluptatem adipiscing stract natus</value>
+                </email>
+                <username name="p_username" type="text" maxlength="30">
+                    <label>Username</label>
+                    <value>Rem officia voluptatem amet co</value>
+                </username>
+                <telefone name="p_telefone" type="text" maxlength="30">
+                    <label>Telefone</label>
+                    <value>Lorem laudantium rem sit adipi</value>
+                </telefone>
+                <telemovel name="p_telemovel" type="text" maxlength="30">
+                    <label>Telemóvel</label>
+                    <value>Unde ipsum ut perspiciatis str</value>
+                </telemovel>
+                <ultimo_acesso_igrp name="p_ultimo_acesso_igrp" type="text" maxlength="30">
+                    <label>Ultimo Acesso IGRP</label>
+                    <value>Amet rem amet ipsum omnis</value>
+                </ultimo_acesso_igrp>
+                <ultimo_acesso_rede_estado name="p_ultimo_acesso_rede_estado" type="text" maxlength="30">
+                    <label>Ultimo Acesso Rede Estado</label>
+                    <value>Unde rem elit labore deserunt</value>
+                </ultimo_acesso_rede_estado>
+                <password_expira_em name="p_password_expira_em" type="text" maxlength="30">
+                    <label>Password Expira em</label>
+                    <value>Adipiscing mollit anim adipisc</value>
+                </password_expira_em>
+                <view_1_img type="text" name="p_view_1_img" maxlength="300">
+                    <value>http://igrp.teste.gov.cv/images/legislativas/data/img/candidatos/jon_doe.jpg</value>
+                </view_1_img>
+            </fields>
+        </view_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="alterar_senha">
+                <title>Alterar senha</title>
+                <app>igrp</app>
+                <page>_CONS_PROC</page>
+                <link>index</link>
+                <target>right_panel</target>
+                <img>info|fa-lock</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/_cons_proc/_CONS_PROC.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <idioma name="p_idioma" type="select" multiple="false" maxlength="30" required="false" change="true" disabled="false" right="false" domain="" java-type="">
+                    <label> Idioma</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </idioma>
+                <separator_1 name="p_separator_1" type="separator" maxlength="30" placeholder="" right="false">
+                    <label>Acesso</label>
+                </separator_1>
+                <perfil name="p_perfil" type="select" multiple="false" maxlength="30" required="true" change="true" disabled="false" right="false" domain="" java-type="">
+                    <label>Perfil</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </perfil>
+                <hidden name="p_organica" type="hidden" maxlength="30" java-type="" tag="organica"/>
+            </fields>
+        </form_1>
+    </content>
+</rows>

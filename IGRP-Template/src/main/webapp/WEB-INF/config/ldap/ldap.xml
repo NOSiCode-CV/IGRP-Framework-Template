@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ldap> <!-- Just for test :-) ... -->
+	<url></url>
+	<username></username>
+	<password></password>
+	<base></base>
+	<authentication_filter></authentication_filter>
+	<entryDN></entryDN>
+</ldap>
