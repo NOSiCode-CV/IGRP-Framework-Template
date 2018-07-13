@@ -61,7 +61,7 @@
                             <file>${project.basedir}/libs/tools.jar</file>
                             <groupId>cv.nosi.3party</groupId>
                             <artifactId>tools</artifactId>
-                            <version>1.7</version>
+                            <version>1.7.0_07</version>
                             <packaging>jar</packaging>
                         </configuration>
                     </execution>
