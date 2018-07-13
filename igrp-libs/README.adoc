@@ -1,0 +1,35 @@
+= IGRP Libraries
+
+This project provide/install on local maven Libraries not available on central maven
+
+== Bibliotecas
+
+
+* As biblitecas aqui descritas, pq não estão acessiveis no maven central
+* Saber versão das bibliotecas {Nome.jar}/META-INF/MANIFEST.MF
+* As bibliotecas em que foi possivel saber a versão
+
+
+.List of libraries installed by this POM project
+|===
+|Original Jar |GroupId |artifactID |Last version |Obervações
+|IGRP.jar |cv.nosi.igrp |igrp |180712 | 
+|WSO2UserStub.jar |cv.nosi.3party |WSO2UserStub |180712 |Maybe Client generated for WSO2 Identity Server ??
+|conversion-box-v1.1 |cv.nosi.3party |conversion-box |1.1 | 
+|jd-cli.jar |cv.nosi.3party |jd-cli |0.9.1.Final |Decompilador ??
+|json-me.jar |cv.nosi.3party |json-me |1.0 |Why ?? Gson and Jackson are no enough
+|ojdbc6.jar |cv.nosi.3party |ojdbc6 |11.2.0.4.0 | Oracle JDBC Driver
+|tool.jar |cv.nosi.3party |tool |1.7.0_07 |WHY NOT INSTALL Oracle JDK and not distribute this ??
+|===
+
+
+== Outros
+
+* jd-cli.jar
+** BAD PRATICES - include classes belong to org/slf4j/slf4j-api and distributed by  
+
+== Reference 
+* https://github.com/wso2/product-is
+* https://github.com/kwart/jd-cmd
+* http://capsulesforthejavamind.blogspot.com/2015/01/conversion-box.html
+* https://github.com/suitmedia/org.json.me

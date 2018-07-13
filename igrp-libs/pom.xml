@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cv.nosicode.igrp</groupId>
+    <artifactId>igrp-libs</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <name>IGRP :: LibsInstaller</name>
+    <description>Install jars to local repository.
+        Install libraries not available on maven repos</description>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.5.2</version>
+                <executions>
+
+                    <execution>
+                        <id>install-nosi-igrp-framework</id>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <phase>process-resources</phase> <!-- use process-resources phase to.force re-installation -->
+                        <configuration>
+                            <file>${project.basedir}/libs/igrp.jar</file>
+                            <groupId>cv.nosi.igrp</groupId> 
+                            <artifactId>igrp</artifactId> 
+                            <version>180712</version>
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+                    
+                    <execution>
+                        <id>install-WSO2UserStub</id>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <phase>process-resources</phase> 
+                        <configuration>
+                            <file>${project.basedir}/libs/WSO2UserStub.jar</file>
+                            <groupId>cv.nosi.3party</groupId> 
+                            <artifactId>WSO2UserStub</artifactId> 
+                            <version>180712</version> 
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+                    
+                    <!-- -->
+                    <execution>
+                        <id>install-com-sun-tools</id>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <file>${project.basedir}/libs/tools.jar</file>
+                            <groupId>cv.nosi.3party</groupId>
+                            <artifactId>tools</artifactId>
+                            <version>1.7</version>
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+                    
+                    
+                    <execution>
+                        <id>install-jd-cli</id>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <file>${project.basedir}/libs/jd-cli.jar</file>      
+                            <groupId>cv.nosi.3party</groupId>
+                            <artifactId>jd-cli</artifactId>
+                            <version>0.9.1.Final</version>
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+                    
+                    <execution>
+                        <id>install-conversion-box</id>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <file>${project.basedir}/libs/conversion-box-v1.1.jar</file>      
+                            <groupId>cv.nosi.3party</groupId>
+                            <artifactId>conversion-box</artifactId>
+                            <version>1.1</version>
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>install-ojdbc6</id>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <file>${project.basedir}/libs/ojdbc6.jar</file>      
+                            <groupId>cv.nosi.3party</groupId>
+                            <artifactId>ojdbc6</artifactId>
+                            <version>11.2.0.4.0</version>
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>install-json-me</id>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <file>${project.basedir}/libs/json-me.jar</file>      
+                            <groupId>cv.nosi.3party</groupId>
+                            <artifactId>json-me</artifactId>
+                            <version>1.0</version>
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>

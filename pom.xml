@@ -16,6 +16,7 @@
 
 
    <modules>
+       <module>igrp-libs</module>
        <module>IGRP-Template</module>
    </modules>
 
