@@ -57,6 +57,10 @@
 			                '</div>'+
 		                '</span>';
 
+			},
+			
+			select : function(layer){
+				return '';
 			}
 
 		},
@@ -66,8 +70,12 @@
 			item : function(b){
 
 				var activeClss = b.default ? 'active' : '';
+				
+				var url = typeof b.url === 'string' ?  b.url : '';
+				
+				var iconURL = b.iconURL ?  b.iconURL : path+'/plugins/gis/images/basemaps/'+b.name+'.jpg';
 
-				return  '<div class="gis-basemap-item '+activeClss+'" basemap-name="'+b.name+'" style="background-image:url('+path+'/plugins/gis/images/basemaps/'+b.name+'.jpg)">'+
+				return  '<div class="gis-basemap-item '+activeClss+'" basemap-name="'+b.name+'" basemap-url="'+url+'" style="background-image:url('+iconURL+')">'+
 
 							'<span>'+b.name+'</span>'+
 

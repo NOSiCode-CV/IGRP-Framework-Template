@@ -23,6 +23,10 @@
 			})[0];
 
 		};
+		
+		Layers.getLayers = function(){
+			return AllLayers;
+		};
 
 		Layers.add = function(layerOption){	
 
@@ -193,12 +197,6 @@
 			if(groupLayers && groupLayers[0])
 
 				Layers.addGroups( groupLayers );
-			
-			//if()
-			
-			/*else
-				
-				$('.gis-layers-controller', app.dom).hide();*/
 
 			Controllers();
 

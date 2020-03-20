@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/associar_layer/Associar_layer.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Associar_layer</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Associar_layer</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2780</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Associar Layer</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Associar Layer</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <tabcontent_1 type="tabcontent" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <lista_de_layer name="p_lista_de_layer" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" custom_return="false" iconColor="#333" iconClass="" img="fa-map" maxlength="50">
+                    <label>Lista de Layer</label>
+                    <value/>
+                </lista_de_layer>
+                <associar_layer name="p_associar_layer" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" custom_return="false" iconColor="#333" iconClass="" img="fa-map-o" maxlength="50">
+                    <label>Associar Layer</label>
+                    <value/>
+                </associar_layer>
+            </fields>
+        </tabcontent_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <layers_ls name="p_layers_ls" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Layers</label>
+                </layers_ls>
+                <ordem_ls name="p_ordem_ls" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Ordem</label>
+                </ordem_ls>
+                <label_ls name="p_label_ls" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Label</label>
+                </label_ls>
+                <id name="p_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <layers_ls name="p_layers_ls">Officia aliqua laudantium anim</layers_ls>
+                        <ordem_ls name="p_ordem_ls">Laudantium labore magna adipis</ordem_ls>
+                        <label_ls name="p_label_ls">Doloremque stract sit dolor to</label_ls>
+                        <id name="p_id" tag="id">hidden-e4cb_6c3c</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <layers_ls name="p_layers_ls">Dolor natus consectetur ut lau</layers_ls>
+                        <ordem_ls name="p_ordem_ls">Officia sit deserunt aliqua ip</ordem_ls>
+                        <label_ls name="p_label_ls">Labore natus dolor ut anim</label_ls>
+                        <id name="p_id" tag="id">hidden-eca1_e117</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <layers_ls name="p_layers_ls">Elit labore aperiam perspiciat</layers_ls>
+                        <ordem_ls name="p_ordem_ls">Totam ut voluptatem stract per</ordem_ls>
+                        <label_ls name="p_label_ls">Officia natus voluptatem accus</label_ls>
+                        <id name="p_id" tag="id">hidden-5382_ea8e</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <layers_ls name="p_layers_ls">Unde natus omnis accusantium d</layers_ls>
+                        <ordem_ls name="p_ordem_ls">Aperiam aliqua dolor rem deser</ordem_ls>
+                        <label_ls name="p_label_ls">Adipiscing iste officia natus</label_ls>
+                        <id name="p_id" tag="id">hidden-09ed_583a</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <layers_ls name="p_layers_ls">Consectetur labore dolor aperi</layers_ls>
+                        <ordem_ls name="p_ordem_ls">Doloremque totam omnis sit tot</ordem_ls>
+                        <label_ls name="p_label_ls">Rem dolor sed voluptatem aliqu</label_ls>
+                        <id name="p_id" tag="id">hidden-53f3_f27a</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>poser_2020</app>
+                        <page>Associar_layer</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/associar_layer/Associar_layer.xml?</parameter>
+                        <target>mpsubmit</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/associar_layer/Associar_layer.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>poser_2020</app>
+                        <page>Associar_layer</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/associar_layer/Associar_layer.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-remove</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/associar_layer/Associar_layer.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <layers name="p_layers" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="Integer">
+                    <label>Layers</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </layers>
+                <label name="p_label" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="">
+                    <label>Label</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </label>
+                <ordem name="p_ordem" type="number" min="" max="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Ordem</label>
+                    <value>49</value>
+                </ordem>
+                <hidden name="p_id_layer" type="hidden" maxlength="250" java-type="Integer" tag="id_layer"/>
+            </fields>
+            <tools-bar>
+                <item type="form" code="" class="success" rel="gravar" refresh_components="">
+                    <title>Gravar</title>
+                    <app>poser_2020</app>
+                    <page>Associar_layer</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/poser_2020/associar_layer/Associar_layer.xml?</parameter>
+                    <target>submit</target>
+                    <img>success|fa-floppy-o</img>
+                    <preview>../images/IGRP/IGRP2.3/app/poser_2020/associar_layer/Associar_layer.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="188" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

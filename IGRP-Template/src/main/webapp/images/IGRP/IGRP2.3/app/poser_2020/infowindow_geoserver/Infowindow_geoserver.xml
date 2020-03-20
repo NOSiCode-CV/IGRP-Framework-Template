@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/infowindow_geoserver/Infowindow_geoserver.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Infowindow_geoserver</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Infowindow_geoserver</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2755</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Identify</title>
+        <iden type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <iden_text type="text" name="p_iden_text" persist="true" maxlength="40">
+                    <value>
+                        <![CDATA[<p>Identify</p>
+]]>
+                    </value>
+                </iden_text>
+            </fields>
+        </iden>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar_idt" refresh_components="">
+                <title>Gravar</title>
+                <app>poser_2020</app>
+                <page>Mapas_form</page>
+                <link>index</link>
+                <target>confirm</target>
+                <img>success|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/mapas_form/Mapas_form.xml</preview>
+            </item>
+        </toolsbar_1>
+        <separatorlist_1 type="separatorlist" xml-type="separatorlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <layer_idt name="p_layer_idt" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" desc="true">
+                    <label>Layer</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </layer_idt>
+                <label_idf name="p_label_idf" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Label</label>
+                    <value>Sit officia stract laudantium mollit</value>
+                </label_idf>
+                <ordem_idf name="p_ordem_idf" type="number" min="" max="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" desc="true">
+                    <label>Ordem</label>
+                    <value>129</value>
+                </ordem_idf>
+                <campo_idf name="p_campo_idf" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" desc="true">
+                    <label>Campo</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </campo_idf>
+                <editavel_ed name="p_editavel_ed" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" desc="true">
+                    <label>Editavel</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </editavel_ed>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <layer_idt name="p_layer_idt" desc="true">2</layer_idt>
+                        <layer_idt_desc name="p_layer_idt_desc">2</layer_idt_desc>
+                        <label_idf name="p_label_idf" desc="true">Accusantium officia laudantium dolor mollit</label_idf>
+                        <label_idf_desc name="p_label_idf_desc">Accusantium officia laudantium dolor mollit</label_idf_desc>
+                        <ordem_idf name="p_ordem_idf" desc="true">231</ordem_idf>
+                        <ordem_idf_desc name="p_ordem_idf_desc">231</ordem_idf_desc>
+                        <campo_idf name="p_campo_idf" desc="true">2</campo_idf>
+                        <campo_idf_desc name="p_campo_idf_desc">2</campo_idf_desc>
+                        <editavel_ed name="p_editavel_ed" desc="true">2</editavel_ed>
+                        <editavel_ed_desc name="p_editavel_ed_desc">2</editavel_ed_desc>
+                    </row>
+                    <row>
+                        <layer_idt name="p_layer_idt" desc="true">2</layer_idt>
+                        <layer_idt_desc name="p_layer_idt_desc">2</layer_idt_desc>
+                        <label_idf name="p_label_idf" desc="true">Aliqua amet aperiam omnis sed</label_idf>
+                        <label_idf_desc name="p_label_idf_desc">Aliqua amet aperiam omnis sed</label_idf_desc>
+                        <ordem_idf name="p_ordem_idf" desc="true">77</ordem_idf>
+                        <ordem_idf_desc name="p_ordem_idf_desc">77</ordem_idf_desc>
+                        <campo_idf name="p_campo_idf" desc="true">2</campo_idf>
+                        <campo_idf_desc name="p_campo_idf_desc">2</campo_idf_desc>
+                        <editavel_ed name="p_editavel_ed" desc="true">2</editavel_ed>
+                        <editavel_ed_desc name="p_editavel_ed_desc">2</editavel_ed_desc>
+                    </row>
+                    <row>
+                        <layer_idt name="p_layer_idt" desc="true">2</layer_idt>
+                        <layer_idt_desc name="p_layer_idt_desc">2</layer_idt_desc>
+                        <label_idf name="p_label_idf" desc="true">Aperiam ut sit aliqua accusantium</label_idf>
+                        <label_idf_desc name="p_label_idf_desc">Aperiam ut sit aliqua accusantium</label_idf_desc>
+                        <ordem_idf name="p_ordem_idf" desc="true">66</ordem_idf>
+                        <ordem_idf_desc name="p_ordem_idf_desc">66</ordem_idf_desc>
+                        <campo_idf name="p_campo_idf" desc="true">2</campo_idf>
+                        <campo_idf_desc name="p_campo_idf_desc">2</campo_idf_desc>
+                        <editavel_ed name="p_editavel_ed" desc="true">2</editavel_ed>
+                        <editavel_ed_desc name="p_editavel_ed_desc">2</editavel_ed_desc>
+                    </row>
+                    <row>
+                        <layer_idt name="p_layer_idt" desc="true">2</layer_idt>
+                        <layer_idt_desc name="p_layer_idt_desc">2</layer_idt_desc>
+                        <label_idf name="p_label_idf" desc="true">Deserunt amet perspiciatis lorem accusantium</label_idf>
+                        <label_idf_desc name="p_label_idf_desc">Deserunt amet perspiciatis lorem accusantium</label_idf_desc>
+                        <ordem_idf name="p_ordem_idf" desc="true">77</ordem_idf>
+                        <ordem_idf_desc name="p_ordem_idf_desc">77</ordem_idf_desc>
+                        <campo_idf name="p_campo_idf" desc="true">2</campo_idf>
+                        <campo_idf_desc name="p_campo_idf_desc">2</campo_idf_desc>
+                        <editavel_ed name="p_editavel_ed" desc="true">2</editavel_ed>
+                        <editavel_ed_desc name="p_editavel_ed_desc">2</editavel_ed_desc>
+                    </row>
+                    <row>
+                        <layer_idt name="p_layer_idt" desc="true">2</layer_idt>
+                        <layer_idt_desc name="p_layer_idt_desc">2</layer_idt_desc>
+                        <label_idf name="p_label_idf" desc="true">Officia sit totam ipsum unde</label_idf>
+                        <label_idf_desc name="p_label_idf_desc">Officia sit totam ipsum unde</label_idf_desc>
+                        <ordem_idf name="p_ordem_idf" desc="true">217</ordem_idf>
+                        <ordem_idf_desc name="p_ordem_idf_desc">217</ordem_idf_desc>
+                        <campo_idf name="p_campo_idf" desc="true">2</campo_idf>
+                        <campo_idf_desc name="p_campo_idf_desc">2</campo_idf_desc>
+                        <editavel_ed name="p_editavel_ed" desc="true">2</editavel_ed>
+                        <editavel_ed_desc name="p_editavel_ed_desc">2</editavel_ed_desc>
+                    </row>
+                </value>
+            </table>
+        </separatorlist_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

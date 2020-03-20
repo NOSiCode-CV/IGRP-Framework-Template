@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/dominio_form/Dominio_form.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Dominio_form</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Dominio_form</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2764</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Inserir / Editar Domínio</title>
+        <gest_d type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <gest_d_text type="text" name="p_gest_d_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[]]>
+                    </value>
+                </gest_d_text>
+            </fields>
+        </gest_d>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar_dom" refresh_components="">
+                <title>Gravar</title>
+                <app>poser_2020</app>
+                <page>Dominio_form</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>success|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/dominio_form/Dominio_form.xml</preview>
+            </item>
+        </toolsbar_1>
+        <reg_domin type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <dominio_reg name="p_dominio_reg" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Domínio</label>
+                    <value>Voluptatem mollit rem adipiscing totam</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </dominio_reg>
+                <codigo_reg name="p_codigo_reg" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Código</label>
+                    <value>Unde omnis voluptatem officia adipiscing</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </codigo_reg>
+                <signif_reg name="p_signif_reg" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Significado</label>
+                    <value>Ipsum deserunt iste consectetur sit</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </signif_reg>
+                <est_form name="p_est_form" type="select" multiple="false" tags="false" domain="DM_ESTADO « poser_2020" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="">
+                    <label>Estado</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Ativo</text>
+                            <value>A</value>
+                        </option>
+                        <option>
+                            <text>Inativo</text>
+                            <value>I</value>
+                        </option>
+                        <option>
+                            <text>Eliminado</text>
+                            <value>E</value>
+                        </option>
+                    </list>
+                </est_form>
+                <hidden name="p_id" type="hidden" maxlength="250" java-type="Integer" tag="id"/>
+            </fields>
+        </reg_domin>
+    </content>
+    <blockly>
+        <imports>
+            <import type="inserir_dao">Inserir Daos</import>
+            <import type="dao">PoserTDominio</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="238" y="13"></block>
+            <block type="formuu_reg_domin" id="`}bhfHyjPfsEg6/Rqsux" inline="true" x="488" y="38">
+                <mutation count="0"></mutation>
+                <field name="dao">PoserTDominio</field>
+                <value name="get_pa">
+                    <block type="core_get_param" id="dv]o5/Mi[5J!)?)zgg~%">
+                        <field name="param">id</field>
+                    </block>
+                </value>
+                <statement name="value2">
+                    <block type="model_form_dominio_reg" id="String::dominio_reg">
+                        <value name="value1">
+                            <block type="get-dao-PoserTDominio" id="eyUC]7dJikGyNR)D+^W`">
+                                <mutation hover_type="String::rvDomain"></mutation>
+                                <field name="DAO_FIELD">String::rvDomain</field>
+                            </block>
+                        </value>
+                        <next>
+                            <block type="model_form_codigo_reg" id="String::codigo_reg">
+                                <value name="value1">
+                                    <block type="get-dao-PoserTDominio" id="e.r:j7xNg[o(DefAY=D7">
+                                        <mutation hover_type="String::rvLowValue"></mutation>
+                                        <field name="DAO_FIELD">String::rvLowValue</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="model_form_signif_reg" id="String::signif_reg">
+                                        <value name="value1">
+                                            <block type="get-dao-PoserTDominio" id="~W.4^}rN#dYhzBC*0PDX">
+                                                <mutation hover_type="String::rvMeaning"></mutation>
+                                                <field name="DAO_FIELD">String::rvMeaning</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="model_form_est_form" id="Select::est_form">
+                                                <value name="value1">
+                                                    <block type="get-dao-PoserTDominio" id="uX_~|o4T8nl=`|;*H*+)">
+                                                        <mutation hover_type="String::estado"></mutation>
+                                                        <field name="DAO_FIELD">String::estado</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="add_isedit" id="bN93I_}Svx=)Vz9folW.">
+                                                        <field name="button">gravar_dom</field>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+            </block>
+            <block type="inserir_dao" id="O*8l:vJ^^kk}+Ag-`+Gb" inline="true" x="513" y="288">
+                <mutation count="0" pxchecked="true"></mutation>
+                <field name="dao">PoserTDominio</field>
+                <field name="EDIT">TRUE</field>
+                <value name="param_id">
+                    <block type="model_get" id="xmNGYCJyN(LbSXhor07K">
+                        <field name="get_model">BigInteger::id_domino</field>
+                    </block>
+                </value>
+                <statement name="value2">
+                    <block type="set-dao-PoserTDominio" id="zT@7c!WADf`#5],XM7;*">
+                        <field name="fields">Integer::id</field>
+                        <value name="value1">
+                            <block type="model_get" id="1^X1a#1Cbfn,u#{kpY]0">
+                                <field name="get_model">BigInteger::id_domino</field>
+                            </block>
+                        </value>
+                        <next>
+                            <block type="set-dao-PoserTDominio" id=".(Ng[q=`qd;p*vs.JF-+">
+                                <field name="fields">String::rvLowValue</field>
+                                <value name="value1">
+                                    <block type="model_get" id="s#mQ1B!CTiyxbXWz#x)A">
+                                        <field name="get_model">String::codigo_reg</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="set-dao-PoserTDominio" id="*tI5-z(Co{T2V}[y24Q4">
+                                        <field name="fields">String::rvDomain</field>
+                                        <value name="value1">
+                                            <block type="model_get" id="3AJZ_irsJE#Z94@LQ]P^">
+                                                <field name="get_model">String::dominio_reg</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="set-dao-PoserTDominio" id="y16a2HH:%C2~E[/`cW:7">
+                                                <field name="fields">String::rvMeaning</field>
+                                                <value name="value1">
+                                                    <block type="model_get" id=":ZGK5.!4?.@=Ka=NhChg">
+                                                        <field name="get_model">String::signif_reg</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="set-dao-PoserTDominio" id="8jS*O@3vZCYc5lL)/;O%">
+                                                        <field name="fields">String::estado</field>
+                                                        <value name="value1">
+                                                            <block type="model_get" id="k0#;}ap81@8H1)my0M:`">
+                                                                <field name="get_model">Select::est_form</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

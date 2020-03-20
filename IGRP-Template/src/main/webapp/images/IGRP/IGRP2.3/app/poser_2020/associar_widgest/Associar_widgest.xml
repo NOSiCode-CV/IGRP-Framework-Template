@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/associar_widgest/Associar_widgest.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Associar_widgest</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Associar_widgest</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2781</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Associar Widgest</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Associar Widgest</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <tabcontent_1 type="tabcontent" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <lista_de_widgest name="p_lista_de_widgest" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" custom_return="false" iconColor="#333" iconClass="" img="fa-google-wallet" maxlength="50">
+                    <label>Lista de Widgest</label>
+                    <value/>
+                </lista_de_widgest>
+                <associar_widgest name="p_associar_widgest" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" custom_return="false" iconColor="#333" iconClass="" img="fa-google-wallet" maxlength="50">
+                    <label>Associar Widgest</label>
+                    <value/>
+                </associar_widgest>
+            </fields>
+        </tabcontent_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <widgest_ls name="p_widgest_ls" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="true" group_in="">
+                    <label>Widgest</label>
+                </widgest_ls>
+                <nome_ls name="p_nome_ls" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome_ls>
+                <posicao_ls name="p_posicao_ls" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Posição</label>
+                </posicao_ls>
+                <ordem_ls name="p_ordem_ls" type="number" min="" max="" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" total_footer="false" group_in="" java-type="">
+                    <label>Ordem</label>
+                </ordem_ls>
+                <tooltip_ls name="p_tooltip_ls" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Tooltip</label>
+                </tooltip_ls>
+                <id name="p_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <widgest_ls name="p_widgest_ls">Voluptatem iste stract elit om</widgest_ls>
+                        <nome_ls name="p_nome_ls">Elit dolor adipiscing ipsum mo</nome_ls>
+                        <posicao_ls name="p_posicao_ls">Aperiam ipsum voluptatem natus</posicao_ls>
+                        <ordem_ls name="p_ordem_ls">22</ordem_ls>
+                        <tooltip_ls name="p_tooltip_ls">Officia totam unde perspiciati</tooltip_ls>
+                        <id name="p_id" tag="id">hidden-7148_a39a</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <widgest_ls name="p_widgest_ls">Omnis labore amet magna dolor</widgest_ls>
+                        <nome_ls name="p_nome_ls">Lorem iste aperiam rem sit</nome_ls>
+                        <posicao_ls name="p_posicao_ls">Aliqua perspiciatis totam volu</posicao_ls>
+                        <ordem_ls name="p_ordem_ls">25</ordem_ls>
+                        <tooltip_ls name="p_tooltip_ls">Mollit labore dolor perspiciat</tooltip_ls>
+                        <id name="p_id" tag="id">hidden-2842_0afe</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <widgest_ls name="p_widgest_ls">Unde adipiscing anim adipiscin</widgest_ls>
+                        <nome_ls name="p_nome_ls">Ut dolor adipiscing accusantiu</nome_ls>
+                        <posicao_ls name="p_posicao_ls">Aliqua laudantium labore lauda</posicao_ls>
+                        <ordem_ls name="p_ordem_ls">10</ordem_ls>
+                        <tooltip_ls name="p_tooltip_ls">Lorem rem ipsum adipiscing vol</tooltip_ls>
+                        <id name="p_id" tag="id">hidden-5c31_9fb4</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <widgest_ls name="p_widgest_ls">Voluptatem natus laudantium ad</widgest_ls>
+                        <nome_ls name="p_nome_ls">Ut amet elit voluptatem laudan</nome_ls>
+                        <posicao_ls name="p_posicao_ls">Elit sit aliqua aperiam accusa</posicao_ls>
+                        <ordem_ls name="p_ordem_ls">24</ordem_ls>
+                        <tooltip_ls name="p_tooltip_ls">Sit officia deserunt aliqua do</tooltip_ls>
+                        <id name="p_id" tag="id">hidden-7d4e_b462</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <widgest_ls name="p_widgest_ls">Aperiam sit natus ipsum omnis</widgest_ls>
+                        <nome_ls name="p_nome_ls">Mollit natus labore consectetu</nome_ls>
+                        <posicao_ls name="p_posicao_ls">Natus amet magna officia lorem</posicao_ls>
+                        <ordem_ls name="p_ordem_ls">15</ordem_ls>
+                        <tooltip_ls name="p_tooltip_ls">Omnis anim dolor rem unde</tooltip_ls>
+                        <id name="p_id" tag="id">hidden-9440_db53</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="link" rel="configuracoes" custom_return="true" refresh_components="">
+                        <title>Configurações</title>
+                        <app>poser_2020</app>
+                        <page>Associar_widgest</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/associar_widgest/Associar_widgest.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>link|fa-link</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/associar_widgest/Associar_widgest.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>poser_2020</app>
+                        <page>Associar_widgest</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/associar_widgest/Associar_widgest.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/associar_widgest/Associar_widgest.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>poser_2020</app>
+                        <page>Associar_widgest</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/associar_widgest/Associar_widgest.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-times</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/associar_widgest/Associar_widgest.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+        <toolsbar_2 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar" refresh_components="">
+                <title>Gravar</title>
+                <app>poser_2020</app>
+                <page>Associar_widgest</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>success|fa-floppy-o</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/associar_widgest/Associar_widgest.xml</preview>
+            </item>
+        </toolsbar_2>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <widgest name="p_widgest" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="Integer">
+                    <label>Widgest</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </widgest>
+                <nome name="p_nome" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nome</label>
+                    <value>Officia adipiscing aperiam rem totam</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome>
+                <posicao name="p_posicao" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="">
+                    <label>Posição</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </posicao>
+                <icone name="p_icone" type="lookup" action="index" page="Associar_widgest" app="poser_2020" lookup_eraser="false" lookup_type="LOOKUP" class="primary" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Icone</label>
+                    <value/>
+                    <lookup>../images/IGRP/IGRP2.3/app/poser_2020/associar_widgest/Associar_widgest.xml</lookup>
+                    <lookupParams/>
+                </icone>
+                <ordem name="p_ordem" type="number" min="" max="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Ordem</label>
+                    <value>175</value>
+                </ordem>
+                <tooltip name="p_tooltip" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Tooltip</label>
+                    <value>Laudantium mollit sit lorem amet</value>
+                </tooltip>
+            </fields>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="238" y="38"></block>
+        </xml>
+    </blockly>
+</rows>

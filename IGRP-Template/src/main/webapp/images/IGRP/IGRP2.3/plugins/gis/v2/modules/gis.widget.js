@@ -6,6 +6,8 @@
 			
 			Templates = GIS.module('Templates'),
 			
+			Utils 	  = GIS.module('Utils'),
+			
 			events	  = new $.EVENTS(['activate','deactivate','load-html', 'ready']),
 			
 			_activated = false,
@@ -13,6 +15,12 @@
 			_htmlRequest = false;
 		
 		widget.html = "";
+		
+		/*widget.options.html = false;
+		
+		widget.options.js = false;
+		
+		widget.options.css = false;*/
 		
 		widget.on = events.on;
 		
@@ -35,6 +43,8 @@
 			trigger : events.execute
 				
 		};
+		
+		widget.templateParams = {};
 
 		widget.action = function(name, fnc){
 			
@@ -84,6 +94,18 @@
 			
 		};
 		
+		widget.loading = function (v){
+			
+			if(v)
+				
+				widget.html.addClass('loading');
+			
+			else
+				
+				widget.html.removeClass('loading');
+			
+		};
+		
 		widget.activate = function(){
 			
 			if(widget.options.html){
@@ -111,9 +133,7 @@
 							events.execute('load-html', widget.html);
 
 							OpenWidgetPanel();
-							
-							
-							
+														
 						}
 					});
 					
@@ -137,6 +157,42 @@
 			CloseWidgetPanel();
 			
 		};
+		
+		
+		widget.setTemplateParams = function(object){
+			
+			for( var key in object ){
+				
+				var value = object[key];
+				
+				widget.templateParams[key] = value;
+				
+			}
+			
+			$('[widget-template]',widget.html).each(function(i,e){
+				
+				var tempName = $(this).attr('widget-template'),
+				
+					template = widget.templates[tempName],
+				
+					result 	 = Utils.templates.render( template, widget.templateParams );
+				
+				$(e).replaceWith( result );
+				
+			});
+			
+		
+		}
+		
+		widget.setTemplateParam = function(tempName, v){
+			
+			var template = widget.templates[tempName];
+			
+				result 	 = Utils.templates.render( template, v );
+						
+			$('[widget-template='+tempName+']').replaceWith( result );
+			
+		}
 		
 		widget.setMenu = function(arr){
 			
@@ -407,7 +463,7 @@
 			step.activate = function(){
 				
 				EvaluateStepsRules();
-	
+					
 				if(!rule){
 					
 					$steps.not('[step-when]').not(html).each(function(){
@@ -426,6 +482,7 @@
 				}
 
 			};	
+			
 			
 			if(trigger){
 				

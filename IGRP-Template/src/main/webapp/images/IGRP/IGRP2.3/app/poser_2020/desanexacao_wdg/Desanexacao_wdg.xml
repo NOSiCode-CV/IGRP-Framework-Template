@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/desanexacao_wdg/Desanexacao_wdg.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Desanexacao_wdg</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Desanexacao_wdg</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2749</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Split</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <layer_des_wdg name="p_layer_des_wdg" type="select" multiple="false" tags="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="">
+                    <label>Layer</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </layer_des_wdg>
+                <cpai_des_wdg name="p_cpai_des_wdg" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Id  Pai</label>
+                    <value>Natus dolor labore elit ut</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </cpai_des_wdg>
+                <cc_des_wdg name="p_cc_des_wdg" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Coordenadas</label>
+                    <value>Deserunt stract mollit rem stract</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </cc_des_wdg>
+                <vt_des_wdg name="p_vt_des_wdg" type="select" multiple="false" tags="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="">
+                    <label>Validar Topologicamente</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </vt_des_wdg>
+            </fields>
+        </form_1>
+        <split_wdg type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <split_wdg_text type="text" name="p_split_wdg_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Split</p>
+]]>
+                    </value>
+                </split_wdg_text>
+            </fields>
+        </split_wdg>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar_des" refresh_components="">
+                <title>Gravar</title>
+                <app>poser_2020</app>
+                <page>Mapas_form</page>
+                <link>index</link>
+                <target>_blank</target>
+                <img>success|fa-floppy-o</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/mapas_form/Mapas_form.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

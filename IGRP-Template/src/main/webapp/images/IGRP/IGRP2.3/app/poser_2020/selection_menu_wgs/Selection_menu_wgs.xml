@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/selection_menu_wgs/Selection_menu_wgs.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Selection_menu_wgs</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Selection_menu_wgs</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2762</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Selection Menu</title>
+        <selection_menu type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <selection_menu_text type="text" name="p_selection_menu_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Selection Menus</p>
+]]>
+                    </value>
+                </selection_menu_text>
+            </fields>
+        </selection_menu>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar_mn" refresh_components="">
+                <title>Gravar</title>
+                <app>poser_2020</app>
+                <page>Selection_menu_wgs</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>success|fa-floppy-o</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/selection_menu_wgs/Selection_menu_wgs.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <layer name="p_layer" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="Integer">
+                    <label>Layer</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </layer>
+                <tipo_de_pagina name="p_tipo_de_pagina" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="">
+                    <label>Tipo de Página</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </tipo_de_pagina>
+                <target name="p_target" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="">
+                    <label>Target</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </target>
+                <endereco_de_pagina name="p_endereco_de_pagina" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Endereço de Página</label>
+                    <value>Anim stract perspiciatis unde voluptatem</value>
+                </endereco_de_pagina>
+                <label name="p_label" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Label</label>
+                    <value>Omnis voluptatem deserunt amet adipiscing</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </label>
+                <valores name="p_valores" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Valores</label>
+                    <value>Mollit unde accusantium lorem adipiscing</value>
+                </valores>
+                <link_wdg name="p_link_wdg" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Link</label>
+                    <value>Dolor natus sed adipiscing magna</value>
+                </link_wdg>
+                <pagina_igrp name="p_pagina_igrp" type="lookup" action="index" page="Selection_menu_wgs" app="poser_2020" lookup_eraser="false" lookup_type="LOOKUP" class="primary" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Página IGRP</label>
+                    <value/>
+                    <lookup>../images/IGRP/IGRP2.3/app/poser_2020/selection_menu_wgs/Selection_menu_wgs.xml</lookup>
+                    <lookupParams/>
+                </pagina_igrp>
+                <ordem name="p_ordem" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Ordem</label>
+                    <value>Doloremque aperiam omnis officia labore</value>
+                </ordem>
+                <icon name="p_icon" type="lookup" action="index" page="Selection_menu_wgs" app="poser_2020" lookup_eraser="false" lookup_type="LOOKUP" class="primary" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Icon</label>
+                    <value/>
+                    <lookup>../images/IGRP/IGRP2.3/app/poser_2020/selection_menu_wgs/Selection_menu_wgs.xml</lookup>
+                    <lookupParams/>
+                </icon>
+                <parametros name="p_parametros" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Parametros</label>
+                    <value>Laudantium iste sit adipiscing ipsum</value>
+                </parametros>
+                <atributos name="p_atributos" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Atributos</label>
+                    <value>Sed ipsum adipiscing stract amet</value>
+                </atributos>
+                <hidden name="p_id" type="hidden" maxlength="250" java-type="" tag="id"/>
+            </fields>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

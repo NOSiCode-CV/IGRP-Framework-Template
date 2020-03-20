@@ -255,7 +255,7 @@
 		};
 		
 		function Clear(){
-			
+						
 			if(DrawTool && DrawTool.disable)
 				
 				DrawTool.disable();
@@ -347,13 +347,13 @@
 
 	GIS.widgets.register('addpoint', {
 		
-		dependencies : {
+		/*dependencies : {
 				
 			js  : [ 'https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js' ],
 			
 			css : [ 'https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css' ]
 				
-		},
+		},*/
 		
 		init : AddPointWidget
 		

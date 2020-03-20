@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/time_slider_wdg/Time_slider_wdg.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Time_slider_wdg</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Time_slider_wdg</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2753</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Time Slider</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <dincio_tslider_wdg name="p_dincio_tslider_wdg" type="date" range="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" class="primary">
+                    <label>Data Incio</label>
+                    <value>06-02-2011</value>
+                </dincio_tslider_wdg>
+                <dfim_tslider_wdg name="p_dfim_tslider_wdg" type="date" range="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" class="primary">
+                    <label>Data Fim</label>
+                    <value>04-04-2011</value>
+                </dfim_tslider_wdg>
+                <salto_tslider_wdg name="p_salto_tslider_wdg" type="number" min="" max="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Salto</label>
+                    <value>88</value>
+                </salto_tslider_wdg>
+                <utempo_tslider_wdg name="p_utempo_tslider_wdg" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="">
+                    <label>Unidade Tempo</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </utempo_tslider_wdg>
+                <tparage_tslider_wdg name="p_tparage_tslider_wdg" type="number" min="" max="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Tempo Paragem</label>
+                    <value>17</value>
+                </tparage_tslider_wdg>
+                <ind_inical_tslider_wdg name="p_ind_inical_tslider_wdg" type="number" min="" max="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Indicie Inicial</label>
+                    <value>36</value>
+                </ind_inical_tslider_wdg>
+                <ind_final_tslider_wdg name="p_ind_final_tslider_wdg" type="number" min="" max="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Indicie Final</label>
+                    <value>212</value>
+                </ind_final_tslider_wdg>
+                <numpolegar_tslider_wdg name="p_numpolegar_tslider_wdg" type="number" min="" max="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Número Polegar</label>
+                    <value>88</value>
+                </numpolegar_tslider_wdg>
+                <ciclo_tslider_wdg name="p_ciclo_tslider_wdg" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="">
+                    <label>Ciclo</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </ciclo_tslider_wdg>
+                <dhoje_tslider_wdg name="p_dhoje_tslider_wdg" type="checkbox" maxlength="250" required="false" change="false" readonly="false" disabled="false" right="false" java-type="int" switch="false" check="true">
+                    <label>Data Hoje</label>
+                    <value>1</value>
+                </dhoje_tslider_wdg>
+                <hidden name="p_id_tslider_wdg" type="hidden" maxlength="250" java-type="" tag="id_tslider_wdg"/>
+            </fields>
+        </form_1>
+        <separatorlist_1 type="separatorlist" xml-type="separatorlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <layer_tslider_wgt name="p_layer_tslider_wgt" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" desc="true">
+                    <label>Layer</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </layer_tslider_wgt>
+                <atr_data_tslider_wdg name="p_atr_data_tslider_wdg" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" desc="true">
+                    <label>Atributo Data</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </atr_data_tslider_wdg>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <layer_tslider_wgt name="p_layer_tslider_wgt" desc="true">2</layer_tslider_wgt>
+                        <layer_tslider_wgt_desc name="p_layer_tslider_wgt_desc">2</layer_tslider_wgt_desc>
+                        <atr_data_tslider_wdg name="p_atr_data_tslider_wdg" desc="true">2</atr_data_tslider_wdg>
+                        <atr_data_tslider_wdg_desc name="p_atr_data_tslider_wdg_desc">2</atr_data_tslider_wdg_desc>
+                    </row>
+                    <row>
+                        <layer_tslider_wgt name="p_layer_tslider_wgt" desc="true">2</layer_tslider_wgt>
+                        <layer_tslider_wgt_desc name="p_layer_tslider_wgt_desc">2</layer_tslider_wgt_desc>
+                        <atr_data_tslider_wdg name="p_atr_data_tslider_wdg" desc="true">2</atr_data_tslider_wdg>
+                        <atr_data_tslider_wdg_desc name="p_atr_data_tslider_wdg_desc">2</atr_data_tslider_wdg_desc>
+                    </row>
+                    <row>
+                        <layer_tslider_wgt name="p_layer_tslider_wgt" desc="true">2</layer_tslider_wgt>
+                        <layer_tslider_wgt_desc name="p_layer_tslider_wgt_desc">2</layer_tslider_wgt_desc>
+                        <atr_data_tslider_wdg name="p_atr_data_tslider_wdg" desc="true">2</atr_data_tslider_wdg>
+                        <atr_data_tslider_wdg_desc name="p_atr_data_tslider_wdg_desc">2</atr_data_tslider_wdg_desc>
+                    </row>
+                    <row>
+                        <layer_tslider_wgt name="p_layer_tslider_wgt" desc="true">2</layer_tslider_wgt>
+                        <layer_tslider_wgt_desc name="p_layer_tslider_wgt_desc">2</layer_tslider_wgt_desc>
+                        <atr_data_tslider_wdg name="p_atr_data_tslider_wdg" desc="true">2</atr_data_tslider_wdg>
+                        <atr_data_tslider_wdg_desc name="p_atr_data_tslider_wdg_desc">2</atr_data_tslider_wdg_desc>
+                    </row>
+                    <row>
+                        <layer_tslider_wgt name="p_layer_tslider_wgt" desc="true">2</layer_tslider_wgt>
+                        <layer_tslider_wgt_desc name="p_layer_tslider_wgt_desc">2</layer_tslider_wgt_desc>
+                        <atr_data_tslider_wdg name="p_atr_data_tslider_wdg" desc="true">2</atr_data_tslider_wdg>
+                        <atr_data_tslider_wdg_desc name="p_atr_data_tslider_wdg_desc">2</atr_data_tslider_wdg_desc>
+                    </row>
+                </value>
+            </table>
+        </separatorlist_1>
+        <time_slider_wdg type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <time_slider_wdg_text type="text" name="p_time_slider_wdg_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>TimeSlider</p>
+]]>
+                    </value>
+                </time_slider_wdg_text>
+            </fields>
+        </time_slider_wdg>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar_tslider" refresh_components="">
+                <title>Gravar</title>
+                <app>poser_2020</app>
+                <page>Mapas_form</page>
+                <link>index</link>
+                <target>_blank</target>
+                <img>success|fa-floppy-o</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/mapas_form/Mapas_form.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>
