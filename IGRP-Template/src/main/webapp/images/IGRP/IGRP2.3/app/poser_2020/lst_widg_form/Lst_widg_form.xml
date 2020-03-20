@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/lst_widg_form/Lst_widg_form.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Lst_widg_form</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Lst_widg_form</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2744</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar / Filtrar Widgets</title>
+        <lst_wdg type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <lst_wdg_text type="text" name="p_lst_wdg_text" persist="true" maxlength="35">
+                    <value>
+                        <![CDATA[<p>Gest&atilde;o Widgets</p>
+]]>
+                    </value>
+                </lst_wdg_text>
+            </fields>
+        </lst_wdg>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>poser_2020</app>
+                <page>Widgets_form</page>
+                <link>index</link>
+                <target>modal|refresh</target>
+                <img>success|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/widgets_form/Widgets_form.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" title="Listar" gen-type="container" gen-group="true">
+            <fields>
+                <nome_lst name="p_nome_lst" type="text" maxlength="50" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome_lst>
+                <tooltip_lst name="p_tooltip_lst" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Tooltip</label>
+                </tooltip_lst>
+                <posicao_lst name="p_posicao_lst" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Posição</label>
+                </posicao_lst>
+                <id name="p_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_lst name="p_nome_lst">Deserunt labore voluptatem doloremque ipsum</nome_lst>
+                        <tooltip_lst name="p_tooltip_lst">Deserunt mollit sed sit ipsum</tooltip_lst>
+                        <posicao_lst name="p_posicao_lst">Doloremque natus sit consectet</posicao_lst>
+                        <id name="p_id" tag="id">hidden-37fd_5569</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_lst name="p_nome_lst">Stract aperiam voluptatem anim elit</nome_lst>
+                        <tooltip_lst name="p_tooltip_lst">Dolor rem accusantium unde sed</tooltip_lst>
+                        <posicao_lst name="p_posicao_lst">Sed dolor lorem amet dolor</posicao_lst>
+                        <id name="p_id" tag="id">hidden-8d16_faeb</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_lst name="p_nome_lst">Dolor sit anim accusantium dolor</nome_lst>
+                        <tooltip_lst name="p_tooltip_lst">Totam officia consectetur stra</tooltip_lst>
+                        <posicao_lst name="p_posicao_lst">Magna sit perspiciatis amet to</posicao_lst>
+                        <id name="p_id" tag="id">hidden-9651_b9a9</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_lst name="p_nome_lst">Voluptatem sed natus iste magna</nome_lst>
+                        <tooltip_lst name="p_tooltip_lst">Sit amet rem labore voluptatem</tooltip_lst>
+                        <posicao_lst name="p_posicao_lst">Sit adipiscing accusantium mag</posicao_lst>
+                        <id name="p_id" tag="id">hidden-ce73_29c6</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_lst name="p_nome_lst">Sit elit mollit voluptatem laudantium</nome_lst>
+                        <tooltip_lst name="p_tooltip_lst">Adipiscing laudantium aliqua m</tooltip_lst>
+                        <posicao_lst name="p_posicao_lst">Lorem rem magna sit rem</posicao_lst>
+                        <id name="p_id" tag="id">hidden-f087_3f54</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>poser_2020</app>
+                        <page>Widgets_form</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/widgets_form/Widgets_form.xml?</parameter>
+                        <target>modal|refresh</target>
+                        <img>warning|fa-pencil-square-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/widgets_form/Widgets_form.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar_wg" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>poser_2020</app>
+                        <page>Lst_widg_form</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/lst_widg_form/Lst_widg_form.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/lst_widg_form/Lst_widg_form.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

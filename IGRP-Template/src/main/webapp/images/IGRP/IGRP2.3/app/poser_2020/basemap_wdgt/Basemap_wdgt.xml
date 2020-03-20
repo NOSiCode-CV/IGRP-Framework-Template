@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/basemap_wdgt/Basemap_wdgt.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Basemap_wdgt</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Basemap_wdgt</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2728</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>BaseMap</title>
+        <base_wgts type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <base_wgts_text type="text" name="p_base_wgts_text" persist="true" maxlength="40">
+                    <value>
+                        <![CDATA[<p>BaseMap</p>
+]]>
+                    </value>
+                </base_wgts_text>
+            </fields>
+        </base_wgts>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar_wdg" refresh_components="">
+                <title>Gravar</title>
+                <app>poser_2020</app>
+                <page>Basemap_wdgt</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>success|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/basemap_wdgt/Basemap_wdgt.xml</preview>
+            </item>
+        </toolsbar_1>
+        <separatorlist_1 type="separatorlist" xml-type="separatorlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <nome_basemap name="p_nome_basemap" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Nome BaseMap</label>
+                    <value>Voluptatem totam amet mollit rem</value>
+                </nome_basemap>
+                <tipo_bs_wdg name="p_tipo_bs_wdg" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Tipo</label>
+                    <value>Iste elit ipsum mollit accusantium</value>
+                </tipo_bs_wdg>
+                <link_wdg name="p_link_wdg" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Link</label>
+                    <value>Lorem ut consectetur magna accusantium</value>
+                </link_wdg>
+                <id_basemap name="p_id_basemap" type="hidden" maxlength="250" java-type="" tag="id_basemap" desc="true"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <nome_basemap name="p_nome_basemap" desc="true">Aliqua unde sit ipsum laudantium</nome_basemap>
+                        <nome_basemap_desc name="p_nome_basemap_desc">Aliqua unde sit ipsum laudantium</nome_basemap_desc>
+                        <tipo_bs_wdg name="p_tipo_bs_wdg" desc="true">Dolor officia natus sit elit</tipo_bs_wdg>
+                        <tipo_bs_wdg_desc name="p_tipo_bs_wdg_desc">Dolor officia natus sit elit</tipo_bs_wdg_desc>
+                        <link_wdg name="p_link_wdg" desc="true">Perspiciatis iste sit labore mollit</link_wdg>
+                        <link_wdg_desc name="p_link_wdg_desc">Perspiciatis iste sit labore mollit</link_wdg_desc>
+                        <id_basemap name="p_id_basemap" tag="id_basemap" desc="true">hidden-5eca_df8e</id_basemap>
+                        <id_basemap_desc name="p_id_basemap_desc">hidden-5eca_df8e</id_basemap_desc>
+                    </row>
+                    <row>
+                        <nome_basemap name="p_nome_basemap" desc="true">Ipsum labore aperiam voluptatem natus</nome_basemap>
+                        <nome_basemap_desc name="p_nome_basemap_desc">Ipsum labore aperiam voluptatem natus</nome_basemap_desc>
+                        <tipo_bs_wdg name="p_tipo_bs_wdg" desc="true">Magna natus accusantium natus totam</tipo_bs_wdg>
+                        <tipo_bs_wdg_desc name="p_tipo_bs_wdg_desc">Magna natus accusantium natus totam</tipo_bs_wdg_desc>
+                        <link_wdg name="p_link_wdg" desc="true">Sit labore aperiam ut elit</link_wdg>
+                        <link_wdg_desc name="p_link_wdg_desc">Sit labore aperiam ut elit</link_wdg_desc>
+                        <id_basemap name="p_id_basemap" tag="id_basemap" desc="true">hidden-23eb_3267</id_basemap>
+                        <id_basemap_desc name="p_id_basemap_desc">hidden-23eb_3267</id_basemap_desc>
+                    </row>
+                    <row>
+                        <nome_basemap name="p_nome_basemap" desc="true">Amet accusantium consectetur ut magna</nome_basemap>
+                        <nome_basemap_desc name="p_nome_basemap_desc">Amet accusantium consectetur ut magna</nome_basemap_desc>
+                        <tipo_bs_wdg name="p_tipo_bs_wdg" desc="true">Totam omnis totam unde consectetur</tipo_bs_wdg>
+                        <tipo_bs_wdg_desc name="p_tipo_bs_wdg_desc">Totam omnis totam unde consectetur</tipo_bs_wdg_desc>
+                        <link_wdg name="p_link_wdg" desc="true">Mollit ut sed adipiscing elit</link_wdg>
+                        <link_wdg_desc name="p_link_wdg_desc">Mollit ut sed adipiscing elit</link_wdg_desc>
+                        <id_basemap name="p_id_basemap" tag="id_basemap" desc="true">hidden-b69d_d58a</id_basemap>
+                        <id_basemap_desc name="p_id_basemap_desc">hidden-b69d_d58a</id_basemap_desc>
+                    </row>
+                    <row>
+                        <nome_basemap name="p_nome_basemap" desc="true">Lorem anim ut officia rem</nome_basemap>
+                        <nome_basemap_desc name="p_nome_basemap_desc">Lorem anim ut officia rem</nome_basemap_desc>
+                        <tipo_bs_wdg name="p_tipo_bs_wdg" desc="true">Magna anim sit ipsum sed</tipo_bs_wdg>
+                        <tipo_bs_wdg_desc name="p_tipo_bs_wdg_desc">Magna anim sit ipsum sed</tipo_bs_wdg_desc>
+                        <link_wdg name="p_link_wdg" desc="true">Ipsum magna amet doloremque perspiciatis</link_wdg>
+                        <link_wdg_desc name="p_link_wdg_desc">Ipsum magna amet doloremque perspiciatis</link_wdg_desc>
+                        <id_basemap name="p_id_basemap" tag="id_basemap" desc="true">hidden-c782_a433</id_basemap>
+                        <id_basemap_desc name="p_id_basemap_desc">hidden-c782_a433</id_basemap_desc>
+                    </row>
+                    <row>
+                        <nome_basemap name="p_nome_basemap" desc="true">Sit lorem dolor mollit sit</nome_basemap>
+                        <nome_basemap_desc name="p_nome_basemap_desc">Sit lorem dolor mollit sit</nome_basemap_desc>
+                        <tipo_bs_wdg name="p_tipo_bs_wdg" desc="true">Sit ut natus sit anim</tipo_bs_wdg>
+                        <tipo_bs_wdg_desc name="p_tipo_bs_wdg_desc">Sit ut natus sit anim</tipo_bs_wdg_desc>
+                        <link_wdg name="p_link_wdg" desc="true">Labore voluptatem anim omnis anim</link_wdg>
+                        <link_wdg_desc name="p_link_wdg_desc">Labore voluptatem anim omnis anim</link_wdg_desc>
+                        <id_basemap name="p_id_basemap" tag="id_basemap" desc="true">hidden-c51e_df17</id_basemap>
+                        <id_basemap_desc name="p_id_basemap_desc">hidden-c51e_df17</id_basemap_desc>
+                    </row>
+                </value>
+            </table>
+        </separatorlist_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

@@ -1,0 +1,198 @@
+{
+	"center" : [16.0221406,-23.9995142],
+	"zoom" : 8,
+    "baseMaps": [
+        {
+            "default": false,
+            "name": "Wikimedia"
+        },
+        {
+            "default": true,
+            "name": "OpenStreetMap"
+        },
+        {
+            "default": false,
+            "name": "GoogleSatellite"
+        },
+        {
+            "default": false,
+            "name": "Esri.WorldImagery"
+        },
+        {
+            "default": false,
+            "name": "OpenStreetMap.DE"
+        },
+        {
+            "default": false,
+            "name": "Oceans",
+            "url" : "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+        }
+    ],
+    "groupLayers": [
+        {
+            "layers": [                
+                {
+                    "id": 1506,
+                    "name": "Divisão Administrativa",
+                    "options": {
+                        "layers": "POSER:divisao_admin"
+                    },
+                    "type": "WMS",
+                    "url": "https://gis.nosi.cv/geoserver/POSER/wms",
+                    "visible": true
+                }
+            ],
+            "title": "WMS",
+            "visible": true
+        },
+        {
+            "layers": [                
+                {
+                    "id": 1505,
+                    "name": "Pontos de Agua",
+                    "options": {
+                        "typeName": "POSER:pontosanas"
+                    },
+                    "type": "WFS",
+                    "Geom_Type": "POINT",
+                    "url": "https://gis.nosi.cv/geoserver/POSER/ows",
+                    "visible": true
+                },
+                {
+                    "id": 1507,
+                    "name": "Conselho de Cabo Verde",
+                    "options": {
+                        "typeName": "POSER:conselho_cv"
+                    },
+                    "type": "WFS",
+                    "Geom_Type": "POLYGON",
+                    "url": "https://gis.nosi.cv/geoserver/POSER/ows",
+                    "visible": true
+                },
+                {
+                    "id": 1507,
+                    "name": "Linhas de Santiago",
+                    "options": {
+                        "typeName": "POSER:Linhas_Santiago"
+                    },
+                    "type": "WFS",
+                    "Geom_Type": "POLYGON",
+                    "url": "https://gis.nosi.cv/geoserver/POSER/ows",
+                    "visible": true
+                }
+                
+            ],
+            "title": "WFS",
+            "visible": true
+        },
+        {
+            "layers": [                
+                {
+                    "id": 1505,
+                    "name": "Santiago",
+                    "options": {
+                        "typeName": "POSER:pontosanas"
+                    },
+                    "type": "WCS",
+                    "Geom_Type": "POINT",
+                    "url": "https://gis.nosi.cv/geoserver/POSER/ows",
+                    "visible": true
+                }                
+            ],
+            "title": "WCS",
+            "visible": true
+        }
+    ],
+    "widgets": [
+        {
+            "active": false,
+            "control": {
+                "button": true
+            },
+            "css": false,
+            "data": {},
+            "html": true,
+            "icon": "fa-map-marker",
+            "js": true,
+            "name": "map_os_1_map_widget_1",
+            "position": "button_level",
+            "title": "Marcar Ponto",
+            "type": "addpoint"
+        },
+        {
+            "active": false,
+            "control": {
+                "button": true
+            },
+            "css": true,
+            "data": {},
+            "html": true,
+            "icon": "fa-search",
+            "js": true,
+            "name": "map_os_1_map_widget_2",
+            "position": "button_level",
+            "title": "Search",
+            "type": "search"
+        },
+        {
+            "active": false,
+            "control": {
+                "button": true
+            },
+            "css": true,
+            "data": {},
+            "html": true,
+            "icon": "fa-list-ol",
+            "js": true,
+            "name": "map_os_1_map_widget_3",
+            "position": "button_level",
+            "title": "Legenda",
+            "type": "legend"
+        },
+        {
+            "active": false,
+            "control": {
+                "button": true
+            },
+            "css": false,
+            "data": {},
+            "html": false,
+            "icon": "fa-info",
+            "js": true,
+            "name": "map_os_1_map_widget_4",
+            "position": "button_level",
+            "title": "Identy",
+            "type": "infowindow"
+        },
+        {
+            "active": false,
+            "control": {
+                "button": true
+            },
+            "css": true,
+            "data": {},
+            "html": true,
+            "icon": "fa-medium",
+            "js": true,
+            "name": "map_os_1_map_widget_5",
+            "position": "button_level",
+            "title": "Medir distâncias e áreas",
+            "type": "measurement"
+        },
+        {
+            "active": false,
+            "control": {
+                "button": true
+            },
+            "css": true,
+            "data": {},
+            "html": true,
+            "icon": "fa-crosshairs",
+            "js": true,
+            "name": "map_os_1_map_widget_6",
+            "position": "button_level",
+            "title": "Get Coordinates",
+            "type": "getcoordinates"
+        }
+    ]
+}

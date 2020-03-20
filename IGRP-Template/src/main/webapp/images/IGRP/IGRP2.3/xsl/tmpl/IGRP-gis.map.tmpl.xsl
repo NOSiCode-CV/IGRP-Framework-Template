@@ -76,7 +76,12 @@
           <div id="{$id}-map" class="gis-map-view" style="min-height:650px"></div>
 
           <xsl:if test="$data">
-            <script>$('#<xsl:value-of select="$id"/>').data('config', '<xsl:value-of select="$data"/>')</script>
+            
+            <script>
+            
+	            $('#<xsl:value-of select="$id"/>').data('configURL', '<xsl:value-of select="$data"></xsl:value-of>' );
+	    
+            </script>
           </xsl:if>
           
         </div>

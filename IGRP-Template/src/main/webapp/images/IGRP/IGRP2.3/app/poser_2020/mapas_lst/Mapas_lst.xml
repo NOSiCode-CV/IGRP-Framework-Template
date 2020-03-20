@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/mapas_lst/Mapas_lst.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Mapas_lst</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Mapas_lst</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2724</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar/Filtrar Mapas</title>
+        <mapas_lst_flt type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <mapas_lst_flt_text type="text" name="p_mapas_lst_flt_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Gest&atilde;o de Mapas</p>
+]]>
+                    </value>
+                </mapas_lst_flt_text>
+            </fields>
+        </mapas_lst_flt>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>poser_2020</app>
+                <page>Mapas_form</page>
+                <link>index</link>
+                <target>modal|refresh</target>
+                <img>success|fa-plus-square</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/mapas_form/Mapas_form.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" title="Lista" gen-type="container" gen-group="true">
+            <fields>
+                <titulo_mapa_lst name="p_titulo_mapa_lst" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Título Mapa</label>
+                </titulo_mapa_lst>
+                <codigo_mapa_lst name="p_codigo_mapa_lst" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Código Mapa</label>
+                </codigo_mapa_lst>
+                <enquadramento name="p_enquadramento" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Enquadramento</label>
+                </enquadramento>
+                <id name="p_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="Integer" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <titulo_mapa_lst name="p_titulo_mapa_lst">Mollit omnis amet ipsum adipis</titulo_mapa_lst>
+                        <codigo_mapa_lst name="p_codigo_mapa_lst">Sit sit officia sed officia</codigo_mapa_lst>
+                        <enquadramento name="p_enquadramento">Labore elit rem labore magna</enquadramento>
+                        <id name="p_id" tag="id">hidden-9678_f969</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <titulo_mapa_lst name="p_titulo_mapa_lst">Ut lorem adipiscing deserunt e</titulo_mapa_lst>
+                        <codigo_mapa_lst name="p_codigo_mapa_lst">Magna consectetur adipiscing d</codigo_mapa_lst>
+                        <enquadramento name="p_enquadramento">Anim aperiam accusantium strac</enquadramento>
+                        <id name="p_id" tag="id">hidden-ce68_54d8</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <titulo_mapa_lst name="p_titulo_mapa_lst">Aperiam sed iste elit sit</titulo_mapa_lst>
+                        <codigo_mapa_lst name="p_codigo_mapa_lst">Natus anim rem anim sit</codigo_mapa_lst>
+                        <enquadramento name="p_enquadramento">Stract totam magna perspiciati</enquadramento>
+                        <id name="p_id" tag="id">hidden-7d74_56e8</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <titulo_mapa_lst name="p_titulo_mapa_lst">Sed anim stract dolor totam</titulo_mapa_lst>
+                        <codigo_mapa_lst name="p_codigo_mapa_lst">Aperiam anim magna sit officia</codigo_mapa_lst>
+                        <enquadramento name="p_enquadramento">Totam ipsum iste omnis ipsum</enquadramento>
+                        <id name="p_id" tag="id">hidden-811e_b501</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <titulo_mapa_lst name="p_titulo_mapa_lst">Lorem sed natus mollit deserun</titulo_mapa_lst>
+                        <codigo_mapa_lst name="p_codigo_mapa_lst">Consectetur omnis perspiciatis</codigo_mapa_lst>
+                        <enquadramento name="p_enquadramento">Aliqua mollit dolor sit adipis</enquadramento>
+                        <id name="p_id" tag="id">hidden-500a_81e8</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="info" rel="ver_mapa" refresh_components="">
+                        <title>Ver Mapa</title>
+                        <app>poser_2020</app>
+                        <page>Ver_mapa</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/ver_mapa/Ver_mapa.xml?</parameter>
+                        <target>modal|refresh</target>
+                        <img>info|fa-map-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/ver_mapa/Ver_mapa.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="warning" rel="editar_map" refresh_components="">
+                        <title>Editar</title>
+                        <app>poser_2020</app>
+                        <page>Mapas_form</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/mapas_form/Mapas_form.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/mapas_form/Mapas_form.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="elimnar_map" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>poser_2020</app>
+                        <page>Mapas_lst</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/mapas_lst/Mapas_lst.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-times</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/mapas_lst/Mapas_lst.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

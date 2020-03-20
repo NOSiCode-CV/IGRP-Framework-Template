@@ -1,6 +1,9 @@
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
 encoding//src/main/resources=UTF-8
+encoding//src/main/webapp/images/IGRP/IGRP2.3/core/formgen/types/containers/map_os/config.example.json=UTF-8
+encoding//src/main/webapp/images/IGRP/IGRP2.3/plugins/gis/v2/widgets/measurement/measurement.widget.html=UTF-8
+encoding//src/main/webapp/images/IGRP/IGRP2.3/plugins/gis/v2/widgets/search/search.widget.html=UTF-8
 encoding//src/test/java=UTF-8
 encoding//src/test/resources=UTF-8
 encoding/<project>=UTF-8

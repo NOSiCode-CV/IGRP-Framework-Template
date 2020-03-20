@@ -1,0 +1,51 @@
+<div class="gis-widget-panel">
+	
+	<div class="gis-widget-panel-title">
+		<span>{{title}}</span>
+	</div>
+	
+	<div class="gis-widget-panel-body">
+		
+		
+		
+		<div class="control-measure">
+		
+			<div class="btn-group btn-group-justified" role="group">
+				<a widget-action="measure-length"  href="#" class="btn btn-default" role="button">Distância</a>
+				<a widget-action="measure-area"  href="#" class="btn btn-default" role="button">Area</a>
+			</div>
+			
+			<div class="measurement-body">
+					<p class="help">Adicione pontos no mapa, para criar uma nova medição</p>
+					<div class="results" widget-template="results">
+						{{#if lastPoint}}
+							<div class="group"> 
+								<p class="heading">Último ponto</p>
+								<p>{{ lastPoint }}</p> 
+							</div>
+						{{/if}}
+					    {{#if length}}
+							<div class="group"> <p><span class="heading">Distância</span>{{ length }}</p> </div>
+						{{/if}}
+					    {{#if area}}
+							<div class="group"> <p><span class="heading">Área</span> {{ area }} </p> </div>
+						{{/if}}
+					</div>
+					<div class="tasks">
+						<a widget-action="finish" class="btn btn-success btn-sm" href="#" role="button">
+							<i class="fa fa-check"></i>
+							<span>Finalizar medição</span>
+						</a>
+						<a widget-action="cancel" class="btn btn-grey btn-sm" href="#" role="button">
+							<i class="fa fa-history"></i>
+							<span>Cancelar</span>
+						</a>
+					</div>
+				</div>
+		
+		 </div>
+		 
+	</div>
+	
+</div>
+	

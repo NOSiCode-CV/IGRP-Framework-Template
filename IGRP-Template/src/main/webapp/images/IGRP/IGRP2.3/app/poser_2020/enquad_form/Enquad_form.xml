@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/enquad_form/Enquad_form.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Enquad_form</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Enquad_form</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2758</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Inserir / Editar Enquadramento</title>
+        <tt_eng type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <tt_eng_text type="text" name="p_tt_eng_text" persist="true" maxlength="50">
+                    <value>
+                        <![CDATA[]]>
+                    </value>
+                </tt_eng_text>
+            </fields>
+        </tt_eng>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar_enq" refresh_components="">
+                <title>Gravar</title>
+                <app>poser_2020</app>
+                <page>Enquad_form</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>success|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/enquad_form/Enquad_form.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <nome_enq name="p_nome_enq" type="text" maxlength="100" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nome</label>
+                    <value>Ut dolor totam voluptatem accusantium</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome_enq>
+                <c_latitude name="p_c_latitude" type="text" maxlength="2000" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Latitude</label>
+                    <value>Totam sed magna aperiam unde</value>
+                </c_latitude>
+                <c_longitude name="p_c_longitude" type="text" maxlength="2000" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Longitude</label>
+                    <value>Voluptatem sit ut iste officia</value>
+                </c_longitude>
+                <zoom_enq name="p_zoom_enq" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Zoom</label>
+                    <value>Officia mollit perspiciatis totam labore</value>
+                </zoom_enq>
+                <hidden name="p_id" type="hidden" maxlength="250" java-type="" tag="id"/>
+            </fields>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

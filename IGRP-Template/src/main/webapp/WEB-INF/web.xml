@@ -3,7 +3,7 @@
   <display-name>IGRP-Template</display-name>
   <context-param>
     <param-name>workspace</param-name>
-    <param-value></param-value>
+    <param-value>C:\Users\carlosa.graca\git\IGRP-Java-Template-Eclipse\IGRP-Template</param-value>
   </context-param>
   <servlet>
     <servlet-name>IGRP</servlet-name>

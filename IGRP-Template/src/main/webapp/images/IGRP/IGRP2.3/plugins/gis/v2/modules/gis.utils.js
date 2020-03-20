@@ -92,8 +92,6 @@
 						
 					}
 					
-					console.log(html)
-					
 					return html[0];
 					
 				}
@@ -104,7 +102,23 @@
 		
 		geometry : {
 			
+			point   : 'POINT',
 			
+			polygon : 'POLYGON',
+			
+			line    : 'LINE'
+			
+		},
+		
+		templates : {
+			
+			render : function(template, data){
+				
+				var template = Handlebars.compile( template );
+				
+		 	 	return  template( data );
+				
+			}
 			
 		}
 		

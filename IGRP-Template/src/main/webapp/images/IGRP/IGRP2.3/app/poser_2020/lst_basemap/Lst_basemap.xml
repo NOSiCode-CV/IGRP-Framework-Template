@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/lst_basemap/Lst_basemap.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Lst_basemap</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Lst_basemap</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2772</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Filtrar/Listar Basemap</title>
+        <lst_bm type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <lst_bm_text type="text" name="p_lst_bm_text" persist="true" maxlength="40">
+                    <value>
+                        <![CDATA[<p>Listar Basemap</p>
+]]>
+                    </value>
+                </lst_bm_text>
+            </fields>
+        </lst_bm>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>poser_2020</app>
+                <page>Basemapform</page>
+                <link>index</link>
+                <target>modal|refresh</target>
+                <img>success|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/basemapform/Basemapform.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <nom_lst name="p_nom_lst" type="text" maxlength="52" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nom_lst>
+                <codi_lst name="p_codi_lst" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Código</label>
+                </codi_lst>
+                <link_lst name="p_link_lst" type="text" maxlength="2000" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Link</label>
+                </link_lst>
+                <id name="p_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="Integer" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nom_lst name="p_nom_lst">Elit unde labore amet stract</nom_lst>
+                        <codi_lst name="p_codi_lst">Magna iste labore dolor perspi</codi_lst>
+                        <link_lst name="p_link_lst">Dolor officia iste amet sed</link_lst>
+                        <id name="p_id" tag="id">hidden-186f_56a0</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nom_lst name="p_nom_lst">Perspiciatis ipsum laudantium natus unde</nom_lst>
+                        <codi_lst name="p_codi_lst">Rem iste officia natus laudant</codi_lst>
+                        <link_lst name="p_link_lst">Deserunt ut stract sit rem</link_lst>
+                        <id name="p_id" tag="id">hidden-a411_96d9</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nom_lst name="p_nom_lst">Consectetur unde laudantium rem omnis</nom_lst>
+                        <codi_lst name="p_codi_lst">Labore dolor anim dolor magna</codi_lst>
+                        <link_lst name="p_link_lst">Dolor magna doloremque ut sit</link_lst>
+                        <id name="p_id" tag="id">hidden-faa0_75e1</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nom_lst name="p_nom_lst">Lorem perspiciatis voluptatem adipiscing totam</nom_lst>
+                        <codi_lst name="p_codi_lst">Aliqua officia anim amet omnis</codi_lst>
+                        <link_lst name="p_link_lst">Iste anim labore aperiam amet</link_lst>
+                        <id name="p_id" tag="id">hidden-7bc5_9a23</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nom_lst name="p_nom_lst">Doloremque sit voluptatem sit amet</nom_lst>
+                        <codi_lst name="p_codi_lst">Stract omnis deserunt adipisci</codi_lst>
+                        <link_lst name="p_link_lst">Aliqua dolor sit aperiam anim</link_lst>
+                        <id name="p_id" tag="id">hidden-e68f_70b9</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="warning" rel="editar_bm" refresh_components="">
+                        <title>Editar</title>
+                        <app>poser_2020</app>
+                        <page>Basemapform</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/basemapform/Basemapform.xml?</parameter>
+                        <target>modal|refresh</target>
+                        <img>warning|fa-pencil-square-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/basemapform/Basemapform.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>poser_2020</app>
+                        <page>Lst_basemap</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/lst_basemap/Lst_basemap.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/lst_basemap/Lst_basemap.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

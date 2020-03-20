@@ -59,7 +59,12 @@
 
 				css : [ 
 					{ path : '/plugins/leaflet/library/css/leaflet.css' },
-					{ path : '/plugins/gis/styles/igrp.gis.css' } 
+					{ path : '/plugins/leaflet/library/plugins/markercluster/MarkerCluster.css' }, 
+					{ path : '/plugins/leaflet/library/plugins/markercluster/MarkerCluster.Default.css' }, 
+					{ path : '/plugins/gis/styles/igrp.gis.css' }, 
+					
+					//{ path : '/plugins/leaflet/library/plugins/draw/leaflet.draw.css' },
+					
 				],
 				
 				js  : [ 
@@ -70,6 +75,10 @@
 					
 					{ path : '/plugins/leaflet/library/plugins/proj4leaflet/proj4.js' },
 					{ path : '/plugins/leaflet/library/plugins/proj4leaflet/proj4leaflet.js' },
+					
+					{ path : '/plugins/leaflet/library/plugins/markercluster/leaflet.markercluster-src.js' },
+					
+					//{ path : '/plugins/leaflet/library/plugins/draw/leaflet.draw.js' },
 					
 					{ path : '/plugins/handlebars/handlebars-v4.1.1.js' },
 					
@@ -196,11 +205,13 @@
 
 					data   = JSON.stringify(GetMapData());
 
+				console.log(data);
 				xml+='<fields>'+
 
 						'<'+container.GET.tag()+'_data type="text" name="p_'+container.GET.tag()+'_data" maxlength="8000" persist="true">'+
 							'<label>Map Data</label>'+
-							'<value>'+data.replace(/"/g, '\\"')+'</value>'+
+							'<value>'+path+'/core/formgen/types/containers/map_os/config.example.json</value>'+
+							//'<value>'+data.replace(/"/g, '\\"')+'</value>'+
 						'</'+container.GET.tag()+'_data>'+
 
 					 '</fields>'

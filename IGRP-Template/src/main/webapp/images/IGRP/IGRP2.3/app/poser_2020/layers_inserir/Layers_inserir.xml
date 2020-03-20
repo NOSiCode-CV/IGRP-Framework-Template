@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/layers_inserir/Layers_inserir.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Layers_inserir</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Layers_inserir</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2741</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Layers - Inserir/Editar</title>
+        <title_ins_layer type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <title_ins_layer_text type="text" name="p_title_ins_layer_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[]]>
+                    </value>
+                </title_ins_layer_text>
+            </fields>
+        </title_ins_layer>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar" refresh_components="">
+                <title>Gravar</title>
+                <app>poser_2020</app>
+                <page>Layers_inserir</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>success|fa-floppy-o</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/layers_inserir/Layers_inserir.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_layer type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <nome_layer_form name="p_nome_layer_form" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nome</label>
+                    <value>Deserunt iste sit dolor sed</value>
+                </nome_layer_form>
+                <codigo_layer_form name="p_codigo_layer_form" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Código</label>
+                    <value>Elit natus sit perspiciatis ut</value>
+                </codigo_layer_form>
+                <url_layer_form name="p_url_layer_form" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>URL</label>
+                    <value>Aliqua sit adipiscing iste aperiam</value>
+                </url_layer_form>
+                <tipo_layer_form name="p_tipo_layer_form" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="String">
+                    <label>Origem</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules/>
+                </tipo_layer_form>
+                <type_name name="p_type_name" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Type Name</label>
+                    <value>Natus laudantium totam consectetur aperiam</value>
+                </type_name>
+                <layers_wms name="p_layers_wms" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Layers</label>
+                    <value>Adipiscing natus rem officia accusantium</value>
+                </layers_wms>
+                <output_format_wms name="p_output_format_wms" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Output Format</label>
+                    <value>Anim natus voluptatem stract anim</value>
+                </output_format_wms>
+                <geom_ty_form name="p_geom_ty_form" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="">
+                    <label>Geom Type</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </geom_ty_form>
+                <estado_form name="p_estado_form" type="checkbox" maxlength="250" required="false" change="false" readonly="false" disabled="false" right="false" java-type="int" switch="true" check="true">
+                    <label>Estado</label>
+                    <value>1</value>
+                </estado_form>
+                <mais_parametros_form name="p_mais_parametros_form" type="checkbox" maxlength="250" required="false" change="false" readonly="false" disabled="false" right="false" java-type="int" switch="true" check="true">
+                    <label>Mais Parametros</label>
+                    <value>1</value>
+                    <rules/>
+                </mais_parametros_form>
+                <hidden name="p_id" type="hidden" maxlength="250" java-type="Integer" tag="id"/>
+                <hidden name="p_id_output_format_wms" type="hidden" maxlength="250" java-type="String" tag="id_output_format_wms"/>
+                <hidden name="p_id_layers_wms" type="hidden" maxlength="250" java-type="String" tag="id_layers_wms"/>
+                <hidden name="p_id_type_name" type="hidden" maxlength="250" java-type="String" tag="id_type_name"/>
+            </fields>
+        </form_layer>
+        <mais_parm type="formlist" xml-type="formlist" title="Parâmetros" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <param_wms name="p_param_wms" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Parâmetro</label>
+                </param_wms>
+                <valor_wms name="p_valor_wms" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Valor</label>
+                </valor_wms>
+                <id_param name="p_id_param" type="hidden" maxlength="250" java-type="" tag="id_param" desc="true"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <param_wms name="p_param_wms" desc="true">Adipiscing lorem ipsum rem perspiciatis</param_wms>
+                        <param_wms_desc name="p_param_wms_desc">Adipiscing lorem ipsum rem perspiciatis</param_wms_desc>
+                        <valor_wms name="p_valor_wms" desc="true">Sit consectetur voluptatem mollit unde</valor_wms>
+                        <valor_wms_desc name="p_valor_wms_desc">Sit consectetur voluptatem mollit unde</valor_wms_desc>
+                        <id_param name="p_id_param" tag="id_param" desc="true">hidden-af83_7dd4</id_param>
+                        <id_param_desc name="p_id_param_desc">hidden-af83_7dd4</id_param_desc>
+                    </row>
+                    <row>
+                        <param_wms name="p_param_wms" desc="true">Consectetur elit lorem omnis magna</param_wms>
+                        <param_wms_desc name="p_param_wms_desc">Consectetur elit lorem omnis magna</param_wms_desc>
+                        <valor_wms name="p_valor_wms" desc="true">Elit deserunt adipiscing labore amet</valor_wms>
+                        <valor_wms_desc name="p_valor_wms_desc">Elit deserunt adipiscing labore amet</valor_wms_desc>
+                        <id_param name="p_id_param" tag="id_param" desc="true">hidden-5cd8_138e</id_param>
+                        <id_param_desc name="p_id_param_desc">hidden-5cd8_138e</id_param_desc>
+                    </row>
+                    <row>
+                        <param_wms name="p_param_wms" desc="true">Labore iste amet dolor magna</param_wms>
+                        <param_wms_desc name="p_param_wms_desc">Labore iste amet dolor magna</param_wms_desc>
+                        <valor_wms name="p_valor_wms" desc="true">Dolor elit totam sit rem</valor_wms>
+                        <valor_wms_desc name="p_valor_wms_desc">Dolor elit totam sit rem</valor_wms_desc>
+                        <id_param name="p_id_param" tag="id_param" desc="true">hidden-c55f_7981</id_param>
+                        <id_param_desc name="p_id_param_desc">hidden-c55f_7981</id_param_desc>
+                    </row>
+                    <row>
+                        <param_wms name="p_param_wms" desc="true">Voluptatem sed deserunt totam sit</param_wms>
+                        <param_wms_desc name="p_param_wms_desc">Voluptatem sed deserunt totam sit</param_wms_desc>
+                        <valor_wms name="p_valor_wms" desc="true">Ut rem amet aperiam unde</valor_wms>
+                        <valor_wms_desc name="p_valor_wms_desc">Ut rem amet aperiam unde</valor_wms_desc>
+                        <id_param name="p_id_param" tag="id_param" desc="true">hidden-ebda_d557</id_param>
+                        <id_param_desc name="p_id_param_desc">hidden-ebda_d557</id_param_desc>
+                    </row>
+                    <row>
+                        <param_wms name="p_param_wms" desc="true">Voluptatem lorem ipsum iste doloremque</param_wms>
+                        <param_wms_desc name="p_param_wms_desc">Voluptatem lorem ipsum iste doloremque</param_wms_desc>
+                        <valor_wms name="p_valor_wms" desc="true">Ut ipsum omnis laudantium consectetur</valor_wms>
+                        <valor_wms_desc name="p_valor_wms_desc">Ut ipsum omnis laudantium consectetur</valor_wms_desc>
+                        <id_param name="p_id_param" tag="id_param" desc="true">hidden-2caf_b667</id_param>
+                        <id_param_desc name="p_id_param_desc">hidden-2caf_b667</id_param_desc>
+                    </row>
+                </value>
+            </table>
+        </mais_parm>
+    </content>
+    <blockly>
+        <imports>
+            <import type="save_formlist">mais_parm</import>
+            <import type="inserir_dao">Inserir Daos</import>
+            <import type="dao">PoserTLayers</import>
+        </imports>
+        <xml>
+            <block type="formuu_form_layer" id=",yHf%BODT2f?.K[KY|DE" inline="true" x="413" y="-262">
+                <mutation count="0"></mutation>
+                <field name="dao">PoserTLayers</field>
+                <value name="get_pa">
+                    <block type="core_get_param" id=",S)-MGNC6Rt8sZN2mW?i">
+                        <field name="param">id</field>
+                    </block>
+                </value>
+                <statement name="value2">
+                    <block type="model_form_nome_layer_form" id="String::nome_layer_form">
+                        <value name="value1">
+                            <block type="get-dao-PoserTLayers" id=",CH7|^|zW*xC?cBcy^#D">
+                                <mutation hover_type="String::nome"></mutation>
+                                <field name="DAO_FIELD">String::nome</field>
+                            </block>
+                        </value>
+                        <next>
+                            <block type="model_form_codigo_layer_form" id="String::codigo_layer_form">
+                                <value name="value1">
+                                    <block type="get-dao-PoserTLayers" id="S0NyKOW#)fSb0D)-NdXX">
+                                        <mutation hover_type="String::code"></mutation>
+                                        <field name="DAO_FIELD">String::code</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="model_form_url_layer_form" id="String::url_layer_form">
+                                        <value name="value1">
+                                            <block type="get-dao-PoserTLayers" id="]TKpbocLQ1jzlo*YGr5C">
+                                                <mutation hover_type="String::url"></mutation>
+                                                <field name="DAO_FIELD">String::url</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="model_form_type_name" id="String::type_name">
+                                                <value name="value1">
+                                                    <block type="get-dao-PoserTLayers" id="9q{XJ!yXCtIc77!=k4gK">
+                                                        <mutation hover_type="String::typeName"></mutation>
+                                                        <field name="DAO_FIELD">String::typeName</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="model_form_layers_wms" id="String::layers_wms">
+                                                        <value name="value1">
+                                                            <block type="get-dao-PoserTLayers" id="pEtw``yc#QMIJIn+ikI:">
+                                                                <mutation hover_type="String::layers"></mutation>
+                                                                <field name="DAO_FIELD">String::layers</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="model_form_output_format_wms" id="String::output_format_wms">
+                                                                <value name="value1">
+                                                                    <block type="get-dao-PoserTLayers" id="mgFRHS1!bEZx+2?Fzqk3">
+                                                                        <mutation hover_type="String::outputFormat"></mutation>
+                                                                        <field name="DAO_FIELD">String::outputFormat</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="add_isedit" id="vMCP(F)LyW[MYKn^ktxx">
+                                                                        <field name="button">gravar</field>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+            </block>
+            <block type="controller" id="controller" x="138" y="-37"></block>
+            <block type="inserir_dao" id="4Gg{kK`,Qn#U~HV?R0e?" inline="true" x="338" y="37">
+                <mutation count="1" pxchecked="true"></mutation>
+                <field name="dao">PoserTLayers</field>
+                <field name="EDIT">TRUE</field>
+                <value name="param_id">
+                    <block type="core_get_param" id="`./y?x3ctkljP4.HK)e4">
+                        <field name="param">id</field>
+                    </block>
+                </value>
+                <statement name="value2">
+                    <block type="set-dao-PoserTLayers" id="A/+!lz38aI/k7e=|@+~5">
+                        <field name="fields">String::nome</field>
+                        <value name="value1">
+                            <block type="model_get" id="nv`lH_zi!~Dw;!+N]|Q.">
+                                <field name="get_model">String::nome_layer_form</field>
+                            </block>
+                        </value>
+                        <next>
+                            <block type="set-dao-PoserTLayers" id="18R{wk]!I3i5RB!5mDOB">
+                                <field name="fields">String::code</field>
+                                <value name="value1">
+                                    <block type="model_get" id="*S!D|7Emvu%bz*vCCC}V">
+                                        <field name="get_model">String::codigo_layer_form</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="set-dao-PoserTLayers" id=")eMqcRiE)a-#Pjxg}=M@">
+                                        <field name="fields">String::url</field>
+                                        <value name="value1">
+                                            <block type="model_get" id="#E5#~}n|y}#;_Nvf0fCn">
+                                                <field name="get_model">String::url_layer_form</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="set-dao-PoserTLayers" id="WInV1cdfz*X(-oD)FNXJ">
+                                                <field name="fields">String::typeName</field>
+                                                <value name="value1">
+                                                    <block type="model_get" id="zY|y,JWINH:=n}E^!~kB">
+                                                        <field name="get_model">String::type_name</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="set-dao-PoserTLayers" id="Z`D[,w6KzDw(yW1.5cww">
+                                                        <field name="fields">String::layers</field>
+                                                        <value name="value1">
+                                                            <block type="model_get" id="sjK!V`Txh:rW{+EZL`z?">
+                                                                <field name="get_model">String::layers_wms</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="set-dao-PoserTLayers" id="yEVswymVn9-XSr+2K?9V">
+                                                                <field name="fields">String::outputFormat</field>
+                                                                <value name="value1">
+                                                                    <block type="model_get" id="HK`3.1a|9SL)J(tg~^P`">
+                                                                        <field name="get_model">String::output_format_wms</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="set-dao-PoserTLayers" id="HsWMu2UH~yBP:M}wX)H6">
+                                                                        <field name="fields">String::estado</field>
+                                                                        <value name="value1">
+                                                                            <block type="model_get" id="m(eEj1;VET1ef=]=k-r0">
+                                                                                <field name="get_model">int::estado_form</field>
+                                                                            </block>
+                                                                        </value>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+                <statement name="SEPARATOR1">
+                    <block type="save_forlist_mais_parm" id="`COvaw=D@onW0nl_sBrd" inline="true">
+                        <field name="dao">PoserTLayers</field>
+                        <statement name="value2">
+                            <block type="set-dao-PoserTLayers" id="y#/1q.nhDyVdx~G87Md]">
+                                <field name="fields">String::parametro</field>
+                                <value name="value1">
+                                    <block type="get_row_form_mais_parm" id="2!HFOLlnD]ZJr^_K66lK">
+                                        <field name="get_row_sep">String::param_wms</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="set-dao-PoserTLayers" id="f)Wbn}7kOzWmhW3LF-e^">
+                                        <field name="fields">String::valor</field>
+                                        <value name="value1">
+                                            <block type="get_row_form_mais_parm" id="DX#a101^p{^,7#%0!j1t">
+                                                <field name="get_row_sep">String::valor_wms</field>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

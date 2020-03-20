@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/mapas_form/Mapas_form.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Mapas_form</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Mapas_form</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2723</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Inserir/Editar Mapas</title>
+        <tt_map type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <tt_map_text type="text" name="p_tt_map_text" persist="true" maxlength="40">
+                    <value>
+                        <![CDATA[<p>Inserir/Editar Mapas</p>
+]]>
+                    </value>
+                </tt_map_text>
+            </fields>
+        </tt_map>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="grav_map" refresh_components="">
+                <title>Gravar</title>
+                <app>poser_2020</app>
+                <page>Mapas_form</page>
+                <link>index</link>
+                <target>submit|refresh</target>
+                <img>success|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/mapas_form/Mapas_form.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <titulo_map_form name="p_titulo_map_form" type="text" maxlength="50" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Titulo Mapa</label>
+                    <value>Doloremque ut sit anim ut</value>
+                </titulo_map_form>
+                <codigo_map_form name="p_codigo_map_form" type="text" maxlength="50" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Código Mapa</label>
+                    <value>Consectetur accusantium doloremque adipiscing accu</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </codigo_map_form>
+                <enquad_form name="p_enquad_form" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="Integer">
+                    <label>Enquadramento</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </enquad_form>
+                <hidden name="p_id_map" type="hidden" maxlength="50" java-type="" tag="id_map"/>
+                <hidden name="p_id" type="hidden" maxlength="250" java-type="" tag="id"/>
+            </fields>
+        </form_1>
+        <tabcontent_1 type="tabcontent" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <ass_layer name="p_ass_layer" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" custom_return="false" iconColor="#333" iconClass="" img="fa-map-o" maxlength="50">
+                    <label>Associar Layer</label>
+                    <value/>
+                </ass_layer>
+                <associar_widgets name="p_associar_widgets" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" custom_return="false" iconColor="#333" iconClass="" img="fa-google-wallet" maxlength="50">
+                    <label>Associar Widgets</label>
+                    <value/>
+                </associar_widgets>
+                <associar_basemap name="p_associar_basemap" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" custom_return="false" iconColor="#333" iconClass="" img="fa-map" maxlength="50">
+                    <label>Associar BaseMap</label>
+                    <value/>
+                </associar_basemap>
+            </fields>
+        </tabcontent_1>
+        <separatorlist_1 type="separatorlist" xml-type="separatorlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <layers_aass name="p_layers_aass" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" desc="true">
+                    <label>Layers</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </layers_aass>
+                <map_id name="p_map_id" type="hidden" maxlength="250" java-type="" tag="map_id" desc="true"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <layers_aass name="p_layers_aass" desc="true">2</layers_aass>
+                        <layers_aass_desc name="p_layers_aass_desc">2</layers_aass_desc>
+                        <map_id name="p_map_id" tag="map_id" desc="true">hidden-d5cb_6c8c</map_id>
+                        <map_id_desc name="p_map_id_desc">hidden-d5cb_6c8c</map_id_desc>
+                    </row>
+                    <row>
+                        <layers_aass name="p_layers_aass" desc="true">2</layers_aass>
+                        <layers_aass_desc name="p_layers_aass_desc">2</layers_aass_desc>
+                        <map_id name="p_map_id" tag="map_id" desc="true">hidden-796a_7e48</map_id>
+                        <map_id_desc name="p_map_id_desc">hidden-796a_7e48</map_id_desc>
+                    </row>
+                    <row>
+                        <layers_aass name="p_layers_aass" desc="true">2</layers_aass>
+                        <layers_aass_desc name="p_layers_aass_desc">2</layers_aass_desc>
+                        <map_id name="p_map_id" tag="map_id" desc="true">hidden-46be_1b50</map_id>
+                        <map_id_desc name="p_map_id_desc">hidden-46be_1b50</map_id_desc>
+                    </row>
+                    <row>
+                        <layers_aass name="p_layers_aass" desc="true">2</layers_aass>
+                        <layers_aass_desc name="p_layers_aass_desc">2</layers_aass_desc>
+                        <map_id name="p_map_id" tag="map_id" desc="true">hidden-8c76_d848</map_id>
+                        <map_id_desc name="p_map_id_desc">hidden-8c76_d848</map_id_desc>
+                    </row>
+                    <row>
+                        <layers_aass name="p_layers_aass" desc="true">2</layers_aass>
+                        <layers_aass_desc name="p_layers_aass_desc">2</layers_aass_desc>
+                        <map_id name="p_map_id" tag="map_id" desc="true">hidden-4263_5995</map_id>
+                        <map_id_desc name="p_map_id_desc">hidden-4263_5995</map_id_desc>
+                    </row>
+                </value>
+            </table>
+        </separatorlist_1>
+        <separatorlist_2 type="separatorlist" xml-type="separatorlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <widgets_ass_form name="p_widgets_ass_form" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" desc="true">
+                    <label>Widgets</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </widgets_ass_form>
+                <id_mapa name="p_id_mapa" type="hidden" maxlength="250" java-type="" tag="id_mapa" desc="true"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <widgets_ass_form name="p_widgets_ass_form" desc="true">2</widgets_ass_form>
+                        <widgets_ass_form_desc name="p_widgets_ass_form_desc">2</widgets_ass_form_desc>
+                        <id_mapa name="p_id_mapa" tag="id_mapa" desc="true">hidden-9303_51ca</id_mapa>
+                        <id_mapa_desc name="p_id_mapa_desc">hidden-9303_51ca</id_mapa_desc>
+                    </row>
+                    <row>
+                        <widgets_ass_form name="p_widgets_ass_form" desc="true">2</widgets_ass_form>
+                        <widgets_ass_form_desc name="p_widgets_ass_form_desc">2</widgets_ass_form_desc>
+                        <id_mapa name="p_id_mapa" tag="id_mapa" desc="true">hidden-2631_b094</id_mapa>
+                        <id_mapa_desc name="p_id_mapa_desc">hidden-2631_b094</id_mapa_desc>
+                    </row>
+                    <row>
+                        <widgets_ass_form name="p_widgets_ass_form" desc="true">2</widgets_ass_form>
+                        <widgets_ass_form_desc name="p_widgets_ass_form_desc">2</widgets_ass_form_desc>
+                        <id_mapa name="p_id_mapa" tag="id_mapa" desc="true">hidden-da7d_39b0</id_mapa>
+                        <id_mapa_desc name="p_id_mapa_desc">hidden-da7d_39b0</id_mapa_desc>
+                    </row>
+                    <row>
+                        <widgets_ass_form name="p_widgets_ass_form" desc="true">2</widgets_ass_form>
+                        <widgets_ass_form_desc name="p_widgets_ass_form_desc">2</widgets_ass_form_desc>
+                        <id_mapa name="p_id_mapa" tag="id_mapa" desc="true">hidden-902d_e8dd</id_mapa>
+                        <id_mapa_desc name="p_id_mapa_desc">hidden-902d_e8dd</id_mapa_desc>
+                    </row>
+                    <row>
+                        <widgets_ass_form name="p_widgets_ass_form" desc="true">2</widgets_ass_form>
+                        <widgets_ass_form_desc name="p_widgets_ass_form_desc">2</widgets_ass_form_desc>
+                        <id_mapa name="p_id_mapa" tag="id_mapa" desc="true">hidden-4f2a_7d1f</id_mapa>
+                        <id_mapa_desc name="p_id_mapa_desc">hidden-4f2a_7d1f</id_mapa_desc>
+                    </row>
+                </value>
+            </table>
+        </separatorlist_2>
+        <separatorlist_3 type="separatorlist" xml-type="separatorlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <basemap name="p_basemap" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" desc="true">
+                    <label>BaseMap</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </basemap>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <basemap name="p_basemap" desc="true">2</basemap>
+                        <basemap_desc name="p_basemap_desc">2</basemap_desc>
+                    </row>
+                    <row>
+                        <basemap name="p_basemap" desc="true">2</basemap>
+                        <basemap_desc name="p_basemap_desc">2</basemap_desc>
+                    </row>
+                    <row>
+                        <basemap name="p_basemap" desc="true">2</basemap>
+                        <basemap_desc name="p_basemap_desc">2</basemap_desc>
+                    </row>
+                    <row>
+                        <basemap name="p_basemap" desc="true">2</basemap>
+                        <basemap_desc name="p_basemap_desc">2</basemap_desc>
+                    </row>
+                    <row>
+                        <basemap name="p_basemap" desc="true">2</basemap>
+                        <basemap_desc name="p_basemap_desc">2</basemap_desc>
+                    </row>
+                </value>
+            </table>
+        </separatorlist_3>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="63" y="12"></block>
+        </xml>
+    </blockly>
+</rows>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/sit/images/IGRP/IGRP2.3/app/poser_2020/domin_lst/Domin_lst.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/sit/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Domin_lst</page>
+    <app>poser_2020</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.poser_2020.pages</package_db>
+        <package_html>Domin_lst</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=2763</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar / Filtrar Dominio</title>
+        <ls_dom type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <ls_dom_text type="text" name="p_ls_dom_text" persist="true" maxlength="70">
+                    <value>
+                        <![CDATA[<p>Gest&atilde;o Dom&iacute;nios&nbsp;</p>
+]]>
+                    </value>
+                </ls_dom_text>
+            </fields>
+        </ls_dom>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>poser_2020</app>
+                <page>Dominio_form</page>
+                <link>index</link>
+                <target>right_panel</target>
+                <img>success|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/poser_2020/dominio_form/Dominio_form.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <dom_lst name="p_dom_lst" type="text" maxlength="50" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Domínio</label>
+                </dom_lst>
+                <codigo_lst name="p_codigo_lst" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Código</label>
+                </codigo_lst>
+                <significado_lst name="p_significado_lst" type="text" maxlength="100" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Significado</label>
+                </significado_lst>
+                <id name="p_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id"/>
+                <teste name="p_teste" type="hidden" maxlength="30" showLabel="true" iskey="false" group_in="" java-type="" tag="teste"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <dom_lst name="p_dom_lst">Unde stract ipsum deserunt unde</dom_lst>
+                        <codigo_lst name="p_codigo_lst">Aperiam laudantium omnis elit</codigo_lst>
+                        <significado_lst name="p_significado_lst">Sit doloremque perspiciatis unde laudantium</significado_lst>
+                        <id name="p_id" tag="id">hidden-fc12_f983</id>
+                        <teste name="p_teste" tag="teste">hidden-f04c_238a</teste>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <dom_lst name="p_dom_lst">Dolor sit elit iste consectetur</dom_lst>
+                        <codigo_lst name="p_codigo_lst">Rem dolor sed aperiam unde</codigo_lst>
+                        <significado_lst name="p_significado_lst">Amet adipiscing omnis laudantium accusantium</significado_lst>
+                        <id name="p_id" tag="id">hidden-3fff_47f7</id>
+                        <teste name="p_teste" tag="teste">hidden-e696_06c0</teste>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <dom_lst name="p_dom_lst">Labore sit doloremque rem omnis</dom_lst>
+                        <codigo_lst name="p_codigo_lst">Aperiam officia deserunt aperi</codigo_lst>
+                        <significado_lst name="p_significado_lst">Amet dolor voluptatem mollit aperiam</significado_lst>
+                        <id name="p_id" tag="id">hidden-fd8f_8fdb</id>
+                        <teste name="p_teste" tag="teste">hidden-e53d_c64c</teste>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <dom_lst name="p_dom_lst">Deserunt stract omnis rem amet</dom_lst>
+                        <codigo_lst name="p_codigo_lst">Sed stract lorem iste ipsum</codigo_lst>
+                        <significado_lst name="p_significado_lst">Officia anim dolor deserunt elit</significado_lst>
+                        <id name="p_id" tag="id">hidden-09de_2fb0</id>
+                        <teste name="p_teste" tag="teste">hidden-07f2_6989</teste>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <dom_lst name="p_dom_lst">Magna accusantium consectetur amet ut</dom_lst>
+                        <codigo_lst name="p_codigo_lst">Deserunt lorem labore deserunt</codigo_lst>
+                        <significado_lst name="p_significado_lst">Elit deserunt ipsum lorem unde</significado_lst>
+                        <id name="p_id" tag="id">hidden-91dc_ae65</id>
+                        <teste name="p_teste" tag="teste">hidden-f487_6dd4</teste>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="info" rel="alt_est" refresh_components="">
+                        <title>Alterar Estado</title>
+                        <app>poser_2020</app>
+                        <page>Domin_lst</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/domin_lst/Domin_lst.xml?</parameter>
+                        <target>confirm</target>
+                        <img>info|fa-toggle-on</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/domin_lst/Domin_lst.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="warning" rel="editar_lst" refresh_components="">
+                        <title>Editar</title>
+                        <app>poser_2020</app>
+                        <page>Dominio_form</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/dominio_form/Dominio_form.xml?</parameter>
+                        <target>right_panel|refresh</target>
+                        <img>warning|fa-pencil-square-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/dominio_form/Dominio_form.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="elimin_lst" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>poser_2020</app>
+                        <page>Mapas_form</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/poser_2020/mapas_form/Mapas_form.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/poser_2020/mapas_form/Mapas_form.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

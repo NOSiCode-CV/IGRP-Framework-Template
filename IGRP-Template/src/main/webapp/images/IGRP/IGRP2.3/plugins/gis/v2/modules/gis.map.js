@@ -1,6 +1,6 @@
 (function(){
 	
-	GIS.module('Map', function(app, o){
+	GIS.module('Map', function(app, o ){
 
 		var Utils    = GIS.module('Utils'),
 		
@@ -22,7 +22,7 @@
 
 				}
 
-			},o);
+			}, o );
 
 		map.addLayer = function(layer){
 
